@@ -29,29 +29,113 @@ html {
 
 @media only screen and (max-width: 600px) {
 	body {
-		margin: 2rem;
 		background-color: var(--background-dark);
+		font-family: poppins;
 		color: white;
+		margin: 0;
+		padding: 0;
+
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			background-color: var(--primary-colour);
+			border: none;
+			outline: none;
+			color: white;
+			border-radius: 0.3em;
+			font-size: 3vw;
+			cursor: pointer;
+			padding: 0.9em 1.8em;
+			transform: scale(1);
+			transition: 0.3s ease;
+			font-weight: bold;
+			margin: auto;
+		}
 
 		header {
-			nav {
-				display: flex;
-				place-content: space-between;
-				align-items: center;
-				font-size: 6vw;
+			position: sticky;
+			top: 0;
+			padding: 2rem;
+			z-index: 999;
+
+			#mobile-cta {
+				font-size: 7vw;
+				float: right;
+			}
+
+			#desktop-nav {
+				position: fixed;
+				right: 0;
+				top: 0;
+				width: 100%;
+				transform: translateX(110%);
+				transition: 0.2s ease;
+
+				height: 100vh;
 				.nav-left {
 					display: flex;
+					justify-content: space-between;
 					align-items: center;
-					font-size: 3vw;
+					font-size: 8vw;
+					background-color: var(--dark-theme-secondary-card-colour);
+					padding-inline: 2rem;
+					height: 16vh;
 
 					img {
-						width: 20%;
-						margin-right: 1rem;
+						width: 10%;
+					}
+
+					#nav-name {
+						display: none;
 					}
 				}
 				.nav-right {
+					text-align: center;
+					margin-block: 1rem 3rem;
+					ul {
+						padding: 0;
+						margin: 0;
+						a {
+							display: block;
+							text-decoration: none;
+							color: white;
+							padding-block: 1.5rem;
+						}
+					}
+
+					button {
+						margin-bottom: 2rem;
+					}
+
+					#toggle-dark {
+						font-size: 5vw;
+					}
+				}
+				#hamburger-menu {
 					display: none;
 				}
+				.nav-mobile-bottom {
+					background-color: var(--dark-theme-secondary-card-colour);
+					position: absolute;
+					padding: 2rem;
+					width: 100%;
+					height: 10vh;
+
+					.logo-links {
+						i {
+							margin-right: 1rem;
+							margin-bottom: 1rem;
+							font-size: 5vw;
+						}
+					}
+				}
+			}
+
+			#desktop-nav[data-visible="true"] {
+				display: block;
+				transform: translateX(0%);
+				transition: 0.2s ease-out;
 			}
 		}
 	}
@@ -59,7 +143,6 @@ html {
 
 @media only screen and (min-width: 601px) and (max-width: 999px) {
 	body {
-		margin: 4rem;
 		background-color: var(--background-dark);
 		color: white;
 		font-family: poppins;
@@ -73,7 +156,7 @@ html {
 			outline: none;
 			color: white;
 			border-radius: 0.3em;
-			font-size: 1.8vw;
+			font-size: 1.5vw;
 			cursor: pointer;
 			padding: 0.9em 1.8em;
 			margin: auto;
@@ -83,28 +166,88 @@ html {
 		}
 
 		header {
-			nav {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
+			position: sticky;
+			top: 0;
+			padding: 2rem;
+			z-index: 999;
 
+			#mobile-cta {
+				font-size: 5vw;
+				float: right;
+			}
+
+			#desktop-nav {
+				position: fixed;
+				right: 0;
+				top: 0;
+				width: 100%;
+				transform: translateX(110%);
+				transition: 0.2s ease;
+
+				height: 100vh;
 				.nav-left {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					font-size: 8vw;
+					background-color: var(--dark-theme-secondary-card-colour);
+					padding-inline: 2rem;
+					height: 20vh;
+
 					img {
-						width: 40%;
+						width: 6%;
 					}
 
 					#nav-name {
 						display: none;
 					}
 				}
-
 				.nav-right {
+					text-align: center;
+					margin-block: 1rem 3rem;
+					ul {
+						padding: 0;
+						margin: 0;
+						a {
+							display: block;
+							text-decoration: none;
+							color: white;
+							padding-block: 1.3rem;
+						}
+					}
+
+					button {
+						margin-bottom: 2rem;
+					}
+
+					#toggle-dark {
+						font-size: 3vw;
+					}
+				}
+				#hamburger-menu {
 					display: none;
 				}
+				.nav-mobile-bottom {
+					background-color: var(--dark-theme-secondary-card-colour);
+					position: absolute;
+					padding: 2rem;
+					width: 100%;
+					height: 8vh;
 
-				#hamburger-menu {
-					font-size: 6vw;
+					.logo-links {
+						i {
+							margin-right: 1rem;
+							margin-bottom: 1rem;
+							font-size: 3vw;
+						}
+					}
 				}
+			}
+
+			#desktop-nav[data-visible="true"] {
+				display: block;
+				transform: translateX(0%);
+				transition: 0.2s ease-out;
 			}
 		}
 	}
@@ -136,7 +279,10 @@ html {
 		}
 
 		header {
-			nav {
+			#mobile-cta {
+				display: none;
+			}
+			#desktop-nav {
 				display: flex;
 				justify-content: space-between;
 
@@ -170,6 +316,10 @@ html {
 					}
 				}
 			}
+			#mobile-exit,
+			.nav-mobile-bottom {
+				display: none;
+			}
 		}
 	}
 }
@@ -200,7 +350,10 @@ html {
 		}
 
 		header {
-			nav {
+			#mobile-cta {
+				display: none;
+			}
+			#desktop-nav {
 				display: flex;
 				justify-content: space-between;
 
@@ -232,6 +385,10 @@ html {
 						margin-left: 1rem;
 						font-size: 2.3vw;
 					}
+				}
+				#mobile-exit,
+				.nav-mobile-bottom {
+					display: none;
 				}
 			}
 		}
