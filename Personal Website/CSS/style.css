@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
-  --background-dark: #222229;
+  --background-dark: white;
   --background-white: #f5f5f5;
   --primary-colour: #eda01a;
   --dark-theme-secondary-card-colour: #45455a;
@@ -122,6 +122,9 @@ html {
     transform: translateX(0%);
     transition: 0.2s ease-out;
   }
+  body .hero .left-hero-social-links {
+    display: none;
+  }
 }
 @media only screen and (min-width: 601px) and (max-width: 999px) {
   body {
@@ -240,7 +243,7 @@ html {
     border-radius: 0.3em;
     font-size: 1vw;
     cursor: pointer;
-    padding: 0.6em 1.2em;
+    padding: 0.8em 1.2em;
     margin: auto;
     transform: scale(1);
     transition: 0.3s ease;
