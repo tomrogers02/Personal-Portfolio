@@ -1,3 +1,5 @@
+/*section title class*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 
@@ -21,6 +23,11 @@ img,
 svg {
 	max-width: 100%;
 	display: block;
+}
+
+img:hover {
+	transform: scale(1.01);
+	transition: 0.2s ease;
 }
 
 html {
@@ -196,6 +203,7 @@ html {
 				}
 			}
 		}
+
 		#about {
 			#about-title {
 				font-size: 4vw;
@@ -204,12 +212,17 @@ html {
 
 			.about-body {
 				margin-bottom: 1rem;
+				font-size: 2.8vw;
+			}
+
+			img {
+				display: none;
 			}
 		}
 	}
 }
 
-@media only screen and (min-width: 601px) and (max-width: 999px) {
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
 	body {
 		background-color: var(--background-dark);
 		color: white;
@@ -238,6 +251,8 @@ html {
 		}
 
 		header {
+			background-color: var(--background-dark);
+			height: 5vh;
 			position: sticky;
 			top: 0;
 			padding: 2rem;
@@ -268,7 +283,7 @@ html {
 					height: 20vh;
 
 					img {
-						width: 6%;
+						width: 10%;
 					}
 
 					#nav-name {
@@ -329,6 +344,7 @@ html {
 				transition: 0.2s ease-out;
 			}
 		}
+
 		.desktop-hero {
 			display: flex;
 			flex-direction: column-reverse;
@@ -394,7 +410,7 @@ html {
 			#about-body-1,
 			#about-body-2,
 			#about-body-3 {
-				font-size: 1.1vw;
+				font-size: 1.6vw;
 				margin-bottom: 0.5rem;
 			}
 
@@ -402,23 +418,140 @@ html {
 				margin: 0;
 				margin-top: 1rem;
 			}
+
+			img {
+				width: 30%;
+				height: 30%;
+			}
+		}
+
+		#projects {
+			#section-title {
+				font-size: 2vw;
+				margin-bottom: 0.5rem;
+			}
+			.project-flex-box {
+				display: flex;
+				align-items: center;
+				margin-bottom: 10rem;
+
+				.left-project {
+					max-width: 55%;
+					img {
+						width: 90%;
+					}
+
+					#nft-image-1 {
+						display: none;
+					}
+				}
+
+				.right-project {
+					margin-left: 0.5rem;
+					text-align: right;
+
+					.project-title {
+						color: var(--primary-colour);
+						font-size: 1.4vw;
+						font-weight: bold;
+						margin-bottom: 1rem;
+					}
+
+					.project-description {
+						font-size: 1vw;
+					}
+
+					.project-tec {
+						font-size: 1.3vw;
+						margin: 2rem 0;
+					}
+					.project-links {
+						a {
+							color: white;
+							text-decoration: none;
+
+							#link-to-website {
+								margin: 0 2rem;
+							}
+						}
+					}
+				}
+			}
+
+			#tenet-flex-box {
+				flex-direction: row-reverse;
+
+				#tenet-right {
+					text-align: left;
+					margin-right: 0.5rem;
+
+					.project-links {
+						a {
+							color: white;
+							text-decoration: none;
+
+							#link-to-website {
+								margin: 2rem;
+							}
+						}
+					}
+				}
+			}
+			#tenet-left {
+				img {
+					margin: auto;
+					width: 90%;
+					float: right;
+				}
+			}
+		}
+
+		#testimonials {
+			background-color: var(--dark-theme-secondary-card-colour);
+			margin: 0;
+			padding: 5rem 5rem;
+			.test-flex-box {
+				display: flex;
+				align-items: center;
+
+				.test-left {
+					.section-title {
+						font-size: 1.6vw;
+						font-weight: bold;
+						margin-bottom: 1rem;
+					}
+
+					.section-body {
+						margin-bottom: 1.5rem;
+						font-size: 1.4vw;
+					}
+				}
+
+				.test-right {
+					background-color: #3f3f50;
+					margin-left: 4rem;
+					padding: 1rem;
+					width: 100%;
+					min-width: 150px;
+
+					.card-body {
+						font-size: 1.3vw;
+						margin-bottom: 1rem;
+					}
+				}
+			}
 		}
 	}
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+@media only screen and (min-width: 1101px) and (max-width: 1440px) {
 	body {
 		background-color: var(--background-dark);
 		color: white;
 		font-family: poppins;
-		margin: 0 2rem;
-
-		.dark-theme {
-			background-color: white;
-		}
 
 		section {
-			margin: 14rem 10rem;
+			margin: 20rem 12rem;
 		}
 
 		button {
@@ -443,10 +576,9 @@ html {
 			transform: scale(1.02);
 			transition: 0.2s ease;
 		}
-		header {
-			background-color: var(--background-dark);
-			padding: 2rem 1rem;
 
+		header {
+			padding: 2rem;
 			#mobile-cta {
 				display: none;
 			}
@@ -463,7 +595,7 @@ html {
 					display: flex;
 					align-items: center;
 					img {
-						width: 8%;
+						width: 25%;
 						margin-right: 1rem;
 					}
 
@@ -502,6 +634,7 @@ html {
 				display: none;
 			}
 		}
+
 		.desktop-hero {
 			display: flex;
 
@@ -587,9 +720,7 @@ html {
 				margin-bottom: 0.5rem;
 			}
 
-			#about-body-1,
-			#about-body-2,
-			#about-body-3 {
+			.about-body {
 				font-size: 1.1vw;
 				margin-bottom: 0.5rem;
 			}
@@ -597,6 +728,123 @@ html {
 			button {
 				margin: 0;
 				margin-top: 1rem;
+			}
+
+			img {
+				width: 30%;
+			}
+		}
+
+		#projects {
+			#section-title {
+				font-size: 2vw;
+				margin-bottom: 0.5rem;
+			}
+			.project-flex-box {
+				display: flex;
+				align-items: center;
+				margin-block: 0 5rem;
+
+				.left-project {
+					background-color: var(--dark-theme-secondary-card-colour);
+					padding: 2rem 2rem 0 2rem;
+					max-width: 50%;
+
+					img {
+						margin: auto;
+					}
+
+					#nft-image-1 {
+						margin-bottom: 2rem;
+						width: 15%;
+					}
+				}
+
+				.right-project {
+					text-align: right;
+					margin-left: 1rem;
+
+					.project-title {
+						color: var(--primary-colour);
+						font-size: 1.2vw;
+						font-weight: bold;
+						margin-bottom: 1rem;
+					}
+
+					.project-description {
+						font-size: 0.9vw;
+					}
+
+					.project-tec {
+						font-size: 1vw;
+						margin: 2rem 0;
+					}
+					.project-links {
+						a {
+							color: white;
+							text-decoration: none;
+
+							#link-to-website {
+								margin: 0 2rem;
+							}
+						}
+					}
+				}
+			}
+
+			#tenet-flex-box {
+				flex-direction: row-reverse;
+
+				#tenet-right {
+					text-align: left;
+					margin-right: 0.5rem;
+
+					#link-to-website {
+						margin: 0 2rem 0 0;
+					}
+				}
+				#tenet-left {
+					img {
+						margin: auto;
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		#testimonials {
+			background-color: var(--dark-theme-secondary-card-colour);
+			margin: 0;
+			padding: 5rem 11rem;
+			.test-flex-box {
+				display: flex;
+				align-items: center;
+
+				.test-left {
+					max-width: 50%;
+					.section-title {
+						font-size: 1.6vw;
+						font-weight: bold;
+						margin-bottom: 1rem;
+					}
+
+					.section-body {
+						margin-bottom: 1.5rem;
+						font-size: 1vw;
+					}
+				}
+
+				.test-right {
+					background-color: #3f3f50;
+					margin-left: 4rem;
+					padding: 1rem;
+					width: 90%;
+
+					.card-body {
+						font-size: 1vw;
+						margin-bottom: 1rem;
+					}
+				}
 			}
 		}
 	}
@@ -607,7 +855,6 @@ html {
 		background-color: var(--background-dark);
 		color: white;
 		font-family: poppins;
-		margin: 0 2rem;
 
 		section {
 			margin: 14rem 12rem;
@@ -633,12 +880,9 @@ html {
 
 		header {
 			background-color: var(--background-dark);
-			position: fixed;
-			scroll-padding-top: 100px;
-			width: 92%;
+
 			padding: 1.5rem;
-			margin: 0;
-			z-index: 999;
+
 			#mobile-cta {
 				display: none;
 			}
@@ -655,7 +899,7 @@ html {
 					align-items: center;
 
 					img {
-						width: 10%;
+						width: 22%;
 						margin-right: 1rem;
 					}
 				}
@@ -681,106 +925,221 @@ html {
 				display: none;
 			}
 		}
-	}
-	.desktop-hero {
-		display: flex;
 
-		.left-hero-social-links {
+		.desktop-hero {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-			position: fixed;
-			bottom: 0;
-			width: 5%;
 
-			a {
-				margin-bottom: 1rem;
-				font-size: 1.4vw;
-				color: white;
-				text-decoration: none;
-
-				a:hover {
-					transform: scale(1.01);
-					transition: 1s ease;
-				}
-			}
-		}
-
-		.mobile-hero {
-			display: flex;
-			.central-hero {
-				text-align: center;
-
-				margin-top: 12rem;
-
-				#upper-title {
-					margin-bottom: 2rem;
-					color: var(--dark-theme-secondary-font-colour);
-				}
-
-				#main-title {
-					font-size: 3vw;
-					font-weight: bold;
-					margin-inline: 6em;
-				}
-
-				#lower-subtitle {
-					margin: 2rem 16rem 4rem 16rem;
-					font-size: 1vw;
-					color: var(--dark-theme-secondary-font-colour);
-				}
-			}
-			.right-hero-email {
+			.left-hero-social-links {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				text-align: center;
-
-				width: 5%;
 				position: fixed;
-				bottom: 26%;
-				right: 4%;
+				bottom: 0;
+				width: 5%;
 
 				a {
-					width: 55%;
-					margin-bottom: 0.5rem;
-
-					transform: rotate(90deg);
-					position: relative;
-					text-decoration: none;
+					margin-bottom: 1rem;
+					font-size: 1.4vw;
 					color: white;
+					text-decoration: none;
+
+					a:hover {
+						transform: scale(1.01);
+						transition: 1s ease;
+					}
 				}
 			}
 
-			#email {
+			.mobile-hero {
+				display: flex;
+				.central-hero {
+					text-align: center;
+
+					margin-top: 6rem;
+
+					#upper-title {
+						margin-bottom: 2rem;
+						color: var(--dark-theme-secondary-font-colour);
+					}
+
+					#main-title {
+						font-size: 3vw;
+						font-weight: bold;
+						margin-inline: 6em;
+					}
+
+					#lower-subtitle {
+						margin: 2rem 16rem 4rem 16rem;
+						font-size: 1vw;
+						color: var(--dark-theme-secondary-font-colour);
+					}
+				}
+				.right-hero-email {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+
+					width: 5%;
+					position: fixed;
+					bottom: 26%;
+					right: 4%;
+
+					a {
+						width: 55%;
+						margin-bottom: 0.5rem;
+
+						transform: rotate(90deg);
+						position: relative;
+						text-decoration: none;
+						color: white;
+					}
+				}
+
+				#email {
+					width: 50%;
+				}
+			}
+		}
+
+		#about {
+			display: flex;
+
+			.about-left-section {
+				margin-right: 2rem;
+			}
+
+			#about-title {
+				font-size: 2vw;
+				margin-bottom: 0.5rem;
+			}
+
+			.about-body {
+				font-size: 1.1vw;
+				margin-bottom: 0.5rem;
+			}
+
+			button {
+				margin: 0;
+				margin-top: 1rem;
+			}
+
+			img {
 				width: 50%;
 			}
 		}
-	}
 
-	#about {
-		display: flex;
+		#projects {
+			#section-title {
+				font-size: 2vw;
+				margin-bottom: 0.5rem;
+			}
+			.project-flex-box {
+				display: flex;
+				align-items: center;
 
-		.about-left-section {
-			margin-right: 2rem;
+				.left-project {
+					background-color: var(--dark-theme-secondary-card-colour);
+					padding: 2rem 2rem 0 2rem;
+					margin: 0 0 15rem 0;
+					max-width: 500px;
+
+					img {
+						margin: auto;
+					}
+
+					#nft-image-1 {
+						margin-bottom: 2rem;
+						width: 15%;
+					}
+				}
+
+				.right-project {
+					text-align: right;
+					margin-left: 1rem;
+
+					.project-title {
+						color: var(--primary-colour);
+						font-size: 1.4vw;
+						font-weight: bold;
+						margin-bottom: 1rem;
+					}
+
+					.project-description {
+						font-size: 0.8vw;
+					}
+
+					.project-tec {
+						font-size: 1vw;
+						margin: 2rem 0;
+					}
+
+					.project-links {
+						a {
+							color: white;
+							text-decoration: none;
+
+							#link-to-website {
+								margin: 0 2rem;
+							}
+						}
+					}
+				}
+			}
+
+			#tenet-flex-box {
+				flex-direction: row-reverse;
+
+				#tenet-right {
+					text-align: left;
+					margin-right: 0.5rem;
+
+					#link-to-website {
+						margin: 0 2rem 0 0;
+					}
+				}
+				#tenet-left {
+					img {
+						margin: auto;
+						width: 100%;
+					}
+				}
+			}
 		}
 
-		#about-title {
-			font-size: 2vw;
-			margin-bottom: 0.5rem;
-		}
-
-		#about-body-1,
-		#about-body-2,
-		#about-body-3 {
-			font-size: 1.1vw;
-			margin-bottom: 0.5rem;
-		}
-
-		button {
+		#testimonials {
+			background-color: var(--dark-theme-secondary-card-colour);
 			margin: 0;
-			margin-top: 1rem;
+			padding: 5rem 11rem;
+			.test-flex-box {
+				display: flex;
+				align-items: center;
+
+				.test-left {
+					.section-title {
+						font-size: 1.6vw;
+						font-weight: bold;
+						margin-bottom: 1rem;
+					}
+
+					.section-body {
+						margin-bottom: 1.5rem;
+					}
+				}
+
+				.test-right {
+					background-color: #3f3f50;
+					margin-left: 4rem;
+					padding: 1rem;
+					width: 90%;
+
+					.card-body {
+						font-size: 1vw;
+						margin-bottom: 1rem;
+					}
+				}
+			}
 		}
 	}
 }
