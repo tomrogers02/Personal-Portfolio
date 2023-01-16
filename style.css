@@ -91,8 +91,8 @@ i:hover {
   }
   body #skills .skill-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 19px;
     width: 100%;
   }
   body #skills .skill-grid .skill-square {
@@ -109,7 +109,10 @@ i:hover {
     place-self: center;
   }
   body #skills .skill-grid .skill-square img {
-    width: 65%;
+    max-width: 65%;
+    min-width: 40%;
+    max-height: 65%;
+    min-height: 40%;
     margin: auto;
   }
   body #skills .skill-grid .skill-square:hover {
@@ -256,24 +259,39 @@ body #projects #tenet-desktop-1 {
     width: 100%;
     margin-bottom: 2rem;
   }
-  body #projects .project-title {
+  body #projects #nft-mobile,
+body #projects #tenet-mobile {
+    position: absolute;
+    margin: auto;
+    width: 90%;
+    z-index: 0;
+  }
+  body #projects .right-project {
+    z-index: 900;
+    position: relative;
+    padding: 2rem;
+  }
+  body #projects .right-project .project-title {
     color: var(--primary-colour);
     font-size: 3.5vw;
     font-weight: bold;
     margin-bottom: 1rem;
   }
-  body #projects .project-tec {
+  body #projects .right-project .project-tec {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
   }
-  body #projects .project-tec .tech-name {
+  body #projects .right-project .project-tec .tech-name {
     font-size: 3.5vw;
   }
-  body #projects .project-links {
+  body #projects .right-project #tenet-tech {
+    margin-block: 2.5rem 2rem;
+  }
+  body #projects .right-project .project-links {
     margin-bottom: 3rem;
   }
-  body #projects .project-links a {
+  body #projects .right-project .project-links a {
     color: white;
     font-size: 6vw;
     text-decoration: none;
