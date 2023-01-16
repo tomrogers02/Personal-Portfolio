@@ -10,6 +10,11 @@ const emailAddress = document.getElementById('email');
 const navBottom = document.getElementById('nav-mobile-bottom');
 const navMiddle = document.getElementById('nav-right');
 const navTop = document.getElementById('nav-left');
+var projectCard = document.getElementsByClassName("left-project");
+const testimonials = document.getElementById('testimonials');
+const testReview = document.getElementById('test-right');
+var skillCard = document.getElementsByClassName('skill-square');
+
 
 
 
@@ -29,7 +34,8 @@ toggle.addEventListener('click', function () {
     navBottom.style.background = '#E5E5E5';
     navMiddle.style.background = '#F5F5F5';
     navTop.style.background = '#f5f5f5';
-
+    testimonials.style.background = '#A3A3B2'
+    testReview.style.background = '#9292A0'
 
     for (var i = 0; i < navLinks.length; i++) {
       navLinks[i].style.color = "black";
@@ -38,12 +44,14 @@ toggle.addEventListener('click', function () {
     for (var i = 0; i < socialLinksHero.length; i++) {
       socialLinksHero[i].style.color = "black";
     }
-    s
 
+    for (var i = 0; i < projectCard.length; i++) {
+      projectCard[i].style.background = "#A3A3B2";
+    }
 
-
-
-
+    for (var i = 0; i < skillCard.length; i++) {
+      skillCard[i].style.background = "#A3A3B2";
+    }
 
   } else {
     body.style.background = '#222229';
@@ -58,6 +66,8 @@ toggle.addEventListener('click', function () {
     navMiddle.style.background = '#222229';
     navTop.style.background = '#222229';
     toggle.style.color = 'white'
+    testimonials.style.background = '#45455a'
+    testReview.style.background = '#3F3F50'
 
     for (var i = 0; i < navLinks.length; i++) {
       navLinks[i].style.color = "white";
@@ -66,8 +76,17 @@ toggle.addEventListener('click', function () {
     for (var i = 0; i < socialLinksHero.length; i++) {
       socialLinksHero[i].style.color = "white";
     }
+
+    for (var i = 0; i < projectCard.length; i++) {
+      projectCard[i].style.background = "#45455a";
+    }
+
+    for (var i = 0; i < skillCard.length; i++) {
+      skillCard[i].style.background = "#45455a";
+    }
   }
 });
+
 
 
 const primaryNav = document.getElementById('desktop-nav');

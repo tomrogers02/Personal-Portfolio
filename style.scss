@@ -28,10 +28,74 @@ img:hover {
 	transition: 0.2s ease;
 }
 
-html {
-	scroll-behavior: smooth;
+.project-tec {
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 100px;
+	}
+
+	#html {
+		color: #e86029;
+	}
+
+	#css {
+		color: #379bd5;
+	}
+
+	#js {
+		color: #e0be27;
+	}
+
+	#wp {
+		color: #21759b;
+	}
 }
 
+i {
+	transition: 0.2s;
+}
+
+i:hover {
+	transform: scale(1.1);
+	transition: 0.2s ease;
+}
+
+#skills {
+	.skill-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 20px;
+		width: 100%;
+
+		.skill-square {
+			background-color: var(--dark-theme-secondary-card-colour);
+			box-shadow: rgba(47, 43, 76, 0.518) 0px 48px 100px 0px;
+			width: 180px;
+			height: 180px;
+			padding: 1rem;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			place-self: center;
+
+			img {
+				width: 65%;
+				margin: auto;
+			}
+		}
+
+		.skill-square:hover {
+			box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 60px 0px;
+			transform: scale(1.05);
+			transition: 0.2s ease;
+		}
+	}
+}
+#footer-copyright {
+	text-align: center;
+	margin-block: 2rem;
+	color: var(--light-theme-secondary-font-colour);
+}
 @media only screen and (max-width: 600px) {
 	body {
 		background-color: var(--background-dark);
@@ -60,7 +124,7 @@ html {
 		}
 
 		.section-title {
-			font-size: 4vw;
+			font-size: 5vw;
 			margin-bottom: 2rem;
 		}
 
@@ -248,18 +312,6 @@ html {
 				.tech-name {
 					font-size: 3.5vw;
 				}
-
-				#html {
-					color: #e86029;
-				}
-
-				#css {
-					color: #379bd5;
-				}
-
-				#js {
-					color: #e0be27;
-				}
 			}
 
 			.project-links {
@@ -291,7 +343,7 @@ html {
 					}
 				}
 
-				.test-right {
+				#test-right {
 					background-color: #3f3f50;
 
 					padding: 1rem;
@@ -301,6 +353,17 @@ html {
 						margin-bottom: 1rem;
 					}
 				}
+			}
+		}
+		#contact {
+			display: grid;
+			grid-template-rows: 40px;
+			a {
+				text-decoration: none;
+			}
+			#btn-email {
+				margin: 1rem 0;
+				font-size: 3vw;
 			}
 		}
 	}
@@ -556,18 +619,6 @@ html {
 						.tech-name {
 							font-size: 1.6vw;
 						}
-
-						#html {
-							color: #e86029;
-						}
-
-						#css {
-							color: #379bd5;
-						}
-
-						#js {
-							color: #e0be27;
-						}
 					}
 					.project-links {
 						a {
@@ -617,7 +668,7 @@ html {
 				display: flex;
 				align-items: center;
 
-				.test-right {
+				#test-right {
 					background-color: #3f3f50;
 					margin-left: 4rem;
 					padding: 1rem;
@@ -629,6 +680,17 @@ html {
 						margin-bottom: 1rem;
 					}
 				}
+			}
+		}
+		#contact {
+			display: grid;
+			grid-template-rows: 40px;
+			a {
+				text-decoration: none;
+			}
+			#btn-email {
+				margin: 1rem 0;
+				font-size: 2vw;
 			}
 		}
 	}
@@ -660,6 +722,7 @@ html {
 			transform: scale(1);
 			transition: 0.3s ease;
 			font-weight: bold;
+			box-shadow: rgba(86, 91, 96, 0.2) 0px 8px 24px;
 		}
 
 		button:hover {
@@ -825,6 +888,7 @@ html {
 
 			img {
 				width: 30%;
+				box-shadow: rgba(86, 91, 96, 0.2) 0px 8px 24px;
 			}
 		}
 
@@ -844,9 +908,10 @@ html {
 
 					img {
 						margin: auto;
+						box-shadow: rgba(70, 74, 79, 0.16) 12px 0px 24px;
 					}
 
-					#nft-image-1 {
+					#nft-desktop-1 {
 						margin-bottom: 2rem;
 						width: 15%;
 					}
@@ -871,28 +936,18 @@ html {
 					.project-tec {
 						display: flex;
 						justify-content: space-between;
-						margin: 0 1rem 1rem 0;
+						margin: 0 1rem 2rem 0;
 
 						.tech-name {
 							font-size: 1.2vw;
-						}
-
-						#html {
-							color: #e86029;
-						}
-
-						#css {
-							color: #379bd5;
-						}
-
-						#js {
-							color: #e0be27;
+							font-weight: bold;
 						}
 					}
 					.project-links {
 						a {
 							color: white;
 							text-decoration: none;
+							font-size: 1.8vw;
 						}
 					}
 					#nft-links {
@@ -933,6 +988,7 @@ html {
 			background-color: var(--dark-theme-secondary-card-colour);
 			margin: 0;
 			padding: 5rem 11rem;
+			box-shadow: rgba(37, 30, 78, 0.15) 0px 48px 100px 0px;
 			.test-flex-box {
 				display: flex;
 				align-items: center;
@@ -941,17 +997,35 @@ html {
 					max-width: 50%;
 				}
 
-				.test-right {
+				#test-right {
 					background-color: #3f3f50;
 					margin-left: 4rem;
 					padding: 1rem;
 					width: 90%;
+					box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
 					.card-body {
 						font-size: 1vw;
 						margin-bottom: 1rem;
 					}
 				}
+				#test-right:hover {
+					box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 60px 0px;
+					transform: scale(1.05);
+					transition: 0.2s ease;
+				}
+			}
+		}
+
+		#contact {
+			display: grid;
+			grid-template-rows: 60px;
+			a {
+				text-decoration: none;
+			}
+			#btn-email {
+				margin: 2rem 0;
+				font-size: 1.2vw;
 			}
 		}
 	}
@@ -1097,25 +1171,22 @@ html {
 					flex-direction: column;
 					align-items: center;
 					text-align: center;
-
-					width: 5%;
 					position: fixed;
-					bottom: 26%;
-					right: 4%;
+					bottom: 0;
+					right: 0;
+					width: 5%;
 
 					a {
-						width: 55%;
-						margin-bottom: 0.5rem;
-
-						transform: rotate(90deg);
-						position: relative;
-						text-decoration: none;
+						margin-bottom: 1rem;
+						font-size: 1.6vw;
 						color: white;
-					}
-				}
+						text-decoration: none;
 
-				#email {
-					width: 50%;
+						a:hover {
+							transform: scale(1.01);
+							transition: 1s ease;
+						}
+					}
 				}
 			}
 		}
@@ -1154,7 +1225,7 @@ html {
 						margin: auto;
 					}
 
-					#nft-image-1 {
+					#nft-desktop-1 {
 						margin-bottom: 2rem;
 						width: 15%;
 					}
@@ -1183,18 +1254,6 @@ html {
 
 						.tech-name {
 							font-size: 1.2vw;
-						}
-
-						#html {
-							color: #e86029;
-						}
-
-						#css {
-							color: #379bd5;
-						}
-
-						#js {
-							color: #e0be27;
 						}
 					}
 					.project-links {
@@ -1245,7 +1304,7 @@ html {
 				display: flex;
 				align-items: center;
 
-				.test-right {
+				#test-right {
 					background-color: #3f3f50;
 					margin-left: 4rem;
 					padding: 1rem;
@@ -1256,6 +1315,18 @@ html {
 						margin-bottom: 1rem;
 					}
 				}
+			}
+		}
+
+		#contact {
+			display: grid;
+			grid-template-rows: 60px;
+			a {
+				text-decoration: none;
+			}
+			#btn-email {
+				margin: 2rem 0;
+				font-size: 1.2vw;
 			}
 		}
 	}

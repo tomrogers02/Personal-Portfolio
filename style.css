@@ -23,8 +23,63 @@ img:hover {
   transition: 0.2s ease;
 }
 
-html {
+.project-tec html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+.project-tec #html {
+  color: #e86029;
+}
+.project-tec #css {
+  color: #379bd5;
+}
+.project-tec #js {
+  color: #e0be27;
+}
+.project-tec #wp {
+  color: #21759b;
+}
+
+i {
+  transition: 0.2s;
+}
+
+i:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+#skills .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+#skills .skill-grid .skill-square {
+  background-color: var(--dark-theme-secondary-card-colour);
+  box-shadow: rgba(47, 43, 76, 0.518) 0px 48px 100px 0px;
+  width: 180px;
+  height: 180px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  place-self: center;
+}
+#skills .skill-grid .skill-square img {
+  width: 65%;
+  margin: auto;
+}
+#skills .skill-grid .skill-square:hover {
+  box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 60px 0px;
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
+#footer-copyright {
+  text-align: center;
+  margin-block: 2rem;
+  color: var(--light-theme-secondary-font-colour);
 }
 
 @media only screen and (max-width: 600px) {
@@ -53,7 +108,7 @@ html {
     margin: auto;
   }
   body .section-title {
-    font-size: 4vw;
+    font-size: 5vw;
     margin-bottom: 2rem;
   }
   body p {
@@ -210,15 +265,6 @@ body #projects #tenet-desktop-1 {
   body #projects .project-tec .tech-name {
     font-size: 3.5vw;
   }
-  body #projects .project-tec #html {
-    color: #e86029;
-  }
-  body #projects .project-tec #css {
-    color: #379bd5;
-  }
-  body #projects .project-tec #js {
-    color: #e0be27;
-  }
   body #projects .project-links {
     margin-bottom: 3rem;
   }
@@ -242,13 +288,24 @@ body #projects #tenet-desktop-1 {
     font-size: 2.6vw;
     margin-bottom: 2rem;
   }
-  body #testimonials .test-flex-box .test-right {
+  body #testimonials .test-flex-box #test-right {
     background-color: #3f3f50;
     padding: 1rem;
   }
-  body #testimonials .test-flex-box .test-right .card-body {
+  body #testimonials .test-flex-box #test-right .card-body {
     font-size: 2.5vw;
     margin-bottom: 1rem;
+  }
+  body #contact {
+    display: grid;
+    grid-template-rows: 40px;
+  }
+  body #contact a {
+    text-decoration: none;
+  }
+  body #contact #btn-email {
+    margin: 1rem 0;
+    font-size: 3vw;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1100px) {
@@ -462,15 +519,6 @@ body #projects #tenet-desktop-1 {
   body #projects .project-flex-box .right-project .project-tec .tech-name {
     font-size: 1.6vw;
   }
-  body #projects .project-flex-box .right-project .project-tec #html {
-    color: #e86029;
-  }
-  body #projects .project-flex-box .right-project .project-tec #css {
-    color: #379bd5;
-  }
-  body #projects .project-flex-box .right-project .project-tec #js {
-    color: #e0be27;
-  }
   body #projects .project-flex-box .right-project .project-links a {
     color: white;
     text-decoration: none;
@@ -504,16 +552,27 @@ body #projects #tenet-desktop-1 {
     display: flex;
     align-items: center;
   }
-  body #testimonials .test-flex-box .test-right {
+  body #testimonials .test-flex-box #test-right {
     background-color: #3f3f50;
     margin-left: 4rem;
     padding: 1rem;
     width: 100%;
     min-width: 150px;
   }
-  body #testimonials .test-flex-box .test-right .card-body {
+  body #testimonials .test-flex-box #test-right .card-body {
     font-size: 1.3vw;
     margin-bottom: 1rem;
+  }
+  body #contact {
+    display: grid;
+    grid-template-rows: 40px;
+  }
+  body #contact a {
+    text-decoration: none;
+  }
+  body #contact #btn-email {
+    margin: 1rem 0;
+    font-size: 2vw;
   }
 }
 @media only screen and (min-width: 1101px) and (max-width: 1440px) {
@@ -541,6 +600,7 @@ body #projects #tenet-desktop-1 {
     transform: scale(1);
     transition: 0.3s ease;
     font-weight: bold;
+    box-shadow: rgba(86, 91, 96, 0.2) 0px 8px 24px;
   }
   body button:hover {
     transform: scale(1.02);
@@ -678,6 +738,7 @@ body header #nav-mobile-bottom {
   }
   body #about img {
     width: 30%;
+    box-shadow: rgba(86, 91, 96, 0.2) 0px 8px 24px;
   }
   body #projects .screenshot-mobile {
     display: none;
@@ -694,8 +755,9 @@ body header #nav-mobile-bottom {
   }
   body #projects .project-flex-box .left-project img {
     margin: auto;
+    box-shadow: rgba(70, 74, 79, 0.16) 12px 0px 24px;
   }
-  body #projects .project-flex-box .left-project #nft-image-1 {
+  body #projects .project-flex-box .left-project #nft-desktop-1 {
     margin-bottom: 2rem;
     width: 15%;
   }
@@ -716,23 +778,16 @@ body header #nav-mobile-bottom {
   body #projects .project-flex-box .right-project .project-tec {
     display: flex;
     justify-content: space-between;
-    margin: 0 1rem 1rem 0;
+    margin: 0 1rem 2rem 0;
   }
   body #projects .project-flex-box .right-project .project-tec .tech-name {
     font-size: 1.2vw;
-  }
-  body #projects .project-flex-box .right-project .project-tec #html {
-    color: #e86029;
-  }
-  body #projects .project-flex-box .right-project .project-tec #css {
-    color: #379bd5;
-  }
-  body #projects .project-flex-box .right-project .project-tec #js {
-    color: #e0be27;
+    font-weight: bold;
   }
   body #projects .project-flex-box .right-project .project-links a {
     color: white;
     text-decoration: none;
+    font-size: 1.8vw;
   }
   body #projects .project-flex-box .right-project #nft-links a {
     margin: 0 0 0 2rem;
@@ -758,6 +813,7 @@ body header #nav-mobile-bottom {
     background-color: var(--dark-theme-secondary-card-colour);
     margin: 0;
     padding: 5rem 11rem;
+    box-shadow: rgba(37, 30, 78, 0.15) 0px 48px 100px 0px;
   }
   body #testimonials .test-flex-box {
     display: flex;
@@ -766,15 +822,32 @@ body header #nav-mobile-bottom {
   body #testimonials .test-flex-box .test-left {
     max-width: 50%;
   }
-  body #testimonials .test-flex-box .test-right {
+  body #testimonials .test-flex-box #test-right {
     background-color: #3f3f50;
     margin-left: 4rem;
     padding: 1rem;
     width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
-  body #testimonials .test-flex-box .test-right .card-body {
+  body #testimonials .test-flex-box #test-right .card-body {
     font-size: 1vw;
     margin-bottom: 1rem;
+  }
+  body #testimonials .test-flex-box #test-right:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 60px 0px;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+  }
+  body #contact {
+    display: grid;
+    grid-template-rows: 60px;
+  }
+  body #contact a {
+    text-decoration: none;
+  }
+  body #contact #btn-email {
+    margin: 2rem 0;
+    font-size: 1.2vw;
   }
 }
 @media only screen and (min-width: 1441px) {
@@ -898,21 +971,20 @@ body header #nav-mobile-bottom {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 5%;
     position: fixed;
-    bottom: 26%;
-    right: 4%;
+    bottom: 0;
+    right: 0;
+    width: 5%;
   }
   body .desktop-hero .mobile-hero .right-hero-email a {
-    width: 55%;
-    margin-bottom: 0.5rem;
-    transform: rotate(90deg);
-    position: relative;
-    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.6vw;
     color: white;
+    text-decoration: none;
   }
-  body .desktop-hero .mobile-hero #email {
-    width: 50%;
+  body .desktop-hero .mobile-hero .right-hero-email a a:hover {
+    transform: scale(1.01);
+    transition: 1s ease;
   }
   body #about {
     display: flex;
@@ -942,7 +1014,7 @@ body header #nav-mobile-bottom {
   body #projects .project-flex-box .left-project img {
     margin: auto;
   }
-  body #projects .project-flex-box .left-project #nft-image-1 {
+  body #projects .project-flex-box .left-project #nft-desktop-1 {
     margin-bottom: 2rem;
     width: 15%;
   }
@@ -967,15 +1039,6 @@ body header #nav-mobile-bottom {
   }
   body #projects .project-flex-box .right-project .project-tec .tech-name {
     font-size: 1.2vw;
-  }
-  body #projects .project-flex-box .right-project .project-tec #html {
-    color: #e86029;
-  }
-  body #projects .project-flex-box .right-project .project-tec #css {
-    color: #379bd5;
-  }
-  body #projects .project-flex-box .right-project .project-tec #js {
-    color: #e0be27;
   }
   body #projects .project-flex-box .right-project .project-links a {
     color: white;
@@ -1010,14 +1073,25 @@ body header #nav-mobile-bottom {
     display: flex;
     align-items: center;
   }
-  body #testimonials .test-flex-box .test-right {
+  body #testimonials .test-flex-box #test-right {
     background-color: #3f3f50;
     margin-left: 4rem;
     padding: 1rem;
     width: 90%;
   }
-  body #testimonials .test-flex-box .test-right .card-body {
+  body #testimonials .test-flex-box #test-right .card-body {
     font-size: 1vw;
     margin-bottom: 1rem;
+  }
+  body #contact {
+    display: grid;
+    grid-template-rows: 60px;
+  }
+  body #contact a {
+    text-decoration: none;
+  }
+  body #contact #btn-email {
+    margin: 2rem 0;
+    font-size: 1.2vw;
   }
 }/*# sourceMappingURL=style.css.map */
