@@ -1,4 +1,3 @@
-/*section title class*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
@@ -37,7 +36,7 @@ html {
     padding: 0;
   }
   body section {
-    margin: 8rem 1.51rem;
+    margin: 10rem 1.1rem;
   }
   body button {
     display: flex;
@@ -53,17 +52,25 @@ html {
     font-weight: bold;
     margin: auto;
   }
+  body .section-title {
+    font-size: 4vw;
+    margin-bottom: 2rem;
+  }
+  body p {
+    font-size: 3vw;
+    margin-block: 1rem;
+  }
   body header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding: 2rem;
+    padding: 1rem;
     z-index: 999;
     background-color: var(--background-dark);
-    height: 3vh;
+    height: 5.5vh;
   }
   body header #mobile-cta {
-    font-size: 7vw;
+    font-size: 9vw;
     float: right;
   }
   body header #desktop-nav {
@@ -161,35 +168,23 @@ html {
   }
   body .desktop-hero .mobile-hero .central-hero {
     text-align: center;
-    margin: 6rem auto 0 auto;
+    margin: 5rem auto 0 auto;
   }
   body .desktop-hero .mobile-hero .central-hero #upper-title {
     margin-bottom: 2rem;
   }
   body .desktop-hero .mobile-hero .central-hero #main-title {
-    font-size: 6.5vw;
+    font-size: 7vw;
     font-weight: bold;
-    margin-inline: 3rem;
+    margin-inline: 2rem;
     margin-bottom: 2rem;
   }
   body .desktop-hero .mobile-hero .central-hero #lower-subtitle {
     margin-inline: 4rem;
     margin-bottom: 2rem;
   }
-  body #about #about-title {
-    font-size: 4vw;
-    margin-bottom: 1.5rem;
-  }
-  body #about .about-body {
-    margin-bottom: 1rem;
-    font-size: 2.8vw;
-  }
   body #about img {
     display: none;
-  }
-  body #projects #section-title {
-    font-size: 4vw;
-    margin-bottom: 2rem;
   }
   body #projects #nft-desktop-1,
 body #projects #nft-desktop-2,
@@ -203,17 +198,14 @@ body #projects #tenet-desktop-1 {
   }
   body #projects .project-title {
     color: var(--primary-colour);
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  body #projects .project-description {
     margin-bottom: 1rem;
   }
   body #projects .project-tec {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   body #projects .project-tec .tech-name {
     font-size: 3.5vw;
@@ -245,10 +237,6 @@ body #projects #tenet-desktop-1 {
     font-size: 4vw;
     font-weight: bold;
     margin-bottom: 1rem;
-  }
-  body #testimonials .test-flex-box .test-left .section-body {
-    margin-bottom: 1.5rem;
-    font-size: 2.5vw;
   }
   body #testimonials .test-flex-box .test-left .listen-to {
     font-size: 2.6vw;
@@ -288,6 +276,14 @@ body #projects #tenet-desktop-1 {
     transform: scale(1);
     transition: 0.3s ease;
     font-weight: bold;
+  }
+  body .section-title {
+    font-size: 2.5vw;
+    margin-bottom: 1.5rem;
+  }
+  body p {
+    font-size: 1.5vw;
+    margin-block: 1rem;
   }
   body header {
     background-color: var(--background-dark);
@@ -411,19 +407,10 @@ body #projects #tenet-desktop-1 {
   }
   body #about {
     display: flex;
+    align-items: center;
   }
   body #about .about-left-section {
     margin-right: 2rem;
-  }
-  body #about #about-title {
-    font-size: 2vw;
-    margin-bottom: 0.5rem;
-  }
-  body #about #about-body-1,
-body #about #about-body-2,
-body #about #about-body-3 {
-    font-size: 1.6vw;
-    margin-bottom: 0.5rem;
   }
   body #about button {
     margin: 0;
@@ -432,10 +419,6 @@ body #about #about-body-3 {
   body #about img {
     width: 30%;
     height: 30%;
-  }
-  body #projects #section-title {
-    font-size: 2vw;
-    margin-bottom: 0.5rem;
   }
   body #projects .screenshot-mobile {
     display: none;
@@ -463,12 +446,8 @@ body #about #about-body-3 {
   }
   body #projects .project-flex-box .right-project .project-title {
     color: var(--primary-colour);
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  body #projects .project-flex-box .right-project .project-description {
-    font-size: 0.9vw;
     margin-bottom: 1rem;
   }
   body #projects .project-flex-box .right-project #nft-tech {
@@ -481,7 +460,7 @@ body #about #about-body-3 {
     margin: 0 1rem 1rem 0;
   }
   body #projects .project-flex-box .right-project .project-tec .tech-name {
-    font-size: 1.2vw;
+    font-size: 1.6vw;
   }
   body #projects .project-flex-box .right-project .project-tec #html {
     color: #e86029;
@@ -525,15 +504,6 @@ body #about #about-body-3 {
     display: flex;
     align-items: center;
   }
-  body #testimonials .test-flex-box .test-left .section-title {
-    font-size: 1.6vw;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  body #testimonials .test-flex-box .test-left .section-body {
-    margin-bottom: 1.5rem;
-    font-size: 1.4vw;
-  }
   body #testimonials .test-flex-box .test-right {
     background-color: #3f3f50;
     margin-left: 4rem;
@@ -575,6 +545,14 @@ body #about #about-body-3 {
   body button:hover {
     transform: scale(1.02);
     transition: 0.2s ease;
+  }
+  body .section-title {
+    font-size: 2vw;
+    margin-bottom: 0.8rem;
+  }
+  body p {
+    font-size: 1.1vw;
+    margin-block: 0.8rem;
   }
   body header {
     padding: 2rem;
@@ -644,7 +622,7 @@ body header #nav-mobile-bottom {
     text-decoration: none;
   }
   body .desktop-hero .left-hero-social-links a a:hover {
-    transform: scale(1.01);
+    transform: scale(1.1);
     transition: 1s ease;
   }
   body .desktop-hero .mobile-hero {
@@ -673,18 +651,20 @@ body header #nav-mobile-bottom {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 5%;
     position: fixed;
-    bottom: 26%;
-    right: 4%;
+    bottom: 0;
+    right: 0;
+    width: 5%;
   }
   body .desktop-hero .mobile-hero .right-hero-email a {
-    width: 55%;
-    margin-bottom: 0.5rem;
-    transform: rotate(90deg);
-    position: relative;
-    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.6vw;
     color: white;
+    text-decoration: none;
+  }
+  body .desktop-hero .mobile-hero .right-hero-email a a:hover {
+    transform: scale(1.01);
+    transition: 1s ease;
   }
   body #about {
     display: flex;
@@ -692,24 +672,12 @@ body header #nav-mobile-bottom {
   body #about .about-left-section {
     margin-right: 2rem;
   }
-  body #about #about-title {
-    font-size: 2vw;
-    margin-bottom: 0.5rem;
-  }
-  body #about .about-body {
-    font-size: 1.1vw;
-    margin-bottom: 0.5rem;
-  }
   body #about button {
     margin: 0;
     margin-top: 1rem;
   }
   body #about img {
     width: 30%;
-  }
-  body #projects #section-title {
-    font-size: 2vw;
-    margin-bottom: 0.5rem;
   }
   body #projects .screenshot-mobile {
     display: none;
@@ -739,10 +707,6 @@ body header #nav-mobile-bottom {
     color: var(--primary-colour);
     font-size: 1.2vw;
     font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  body #projects .project-flex-box .right-project .project-description {
-    font-size: 0.9vw;
     margin-bottom: 1rem;
   }
   body #projects .project-flex-box .right-project #nft-tech {
@@ -802,15 +766,6 @@ body header #nav-mobile-bottom {
   body #testimonials .test-flex-box .test-left {
     max-width: 50%;
   }
-  body #testimonials .test-flex-box .test-left .section-title {
-    font-size: 1.6vw;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  body #testimonials .test-flex-box .test-left .section-body {
-    margin-bottom: 1.5rem;
-    font-size: 1vw;
-  }
   body #testimonials .test-flex-box .test-right {
     background-color: #3f3f50;
     margin-left: 4rem;
@@ -847,6 +802,14 @@ body header #nav-mobile-bottom {
     transform: scale(1);
     transition: 0.3s ease;
     font-weight: bold;
+  }
+  body .section-title {
+    font-size: 2vw;
+    margin-bottom: 0.8rem;
+  }
+  body p {
+    font-size: 1.1vw;
+    margin-block: 0.8rem;
   }
   body header {
     background-color: var(--background-dark);
@@ -957,24 +920,11 @@ body header #nav-mobile-bottom {
   body #about .about-left-section {
     margin-right: 2rem;
   }
-  body #about #about-title {
-    font-size: 2vw;
-    margin-bottom: 0.5rem;
-  }
-  body #about .about-body {
-    font-size: 1.1vw;
-    margin-bottom: 0.5rem;
-  }
   body #about button {
     margin: 0;
-    margin-top: 1rem;
   }
   body #about img {
     width: 50%;
-  }
-  body #projects #section-title {
-    font-size: 2vw;
-    margin-bottom: 0.5rem;
   }
   body #projects .screenshot-mobile {
     display: none;
@@ -1005,10 +955,6 @@ body header #nav-mobile-bottom {
     font-size: 1.2vw;
     font-weight: bold;
     margin-bottom: 1rem;
-  }
-  body #projects .project-flex-box .right-project .project-description {
-    font-size: 0.9vw;
-    margin-bottom: 2rem;
   }
   body #projects .project-flex-box .right-project #nft-tech {
     justify-items: right;
@@ -1063,14 +1009,6 @@ body header #nav-mobile-bottom {
   body #testimonials .test-flex-box {
     display: flex;
     align-items: center;
-  }
-  body #testimonials .test-flex-box .test-left .section-title {
-    font-size: 1.6vw;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  body #testimonials .test-flex-box .test-left .section-body {
-    margin-bottom: 1.5rem;
   }
   body #testimonials .test-flex-box .test-right {
     background-color: #3f3f50;
