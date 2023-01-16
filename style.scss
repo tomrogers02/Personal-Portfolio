@@ -66,6 +66,8 @@ html {
 			top: 0;
 			padding: 2rem;
 			z-index: 999;
+			background-color: var(--background-dark);
+			height: 3vh;
 
 			#mobile-cta {
 				font-size: 7vw;
@@ -190,7 +192,7 @@ html {
 					}
 
 					#main-title {
-						font-size: 6vw;
+						font-size: 6.5vw;
 						font-weight: bold;
 						margin-inline: 3rem;
 						margin-bottom: 2rem;
@@ -217,6 +219,103 @@ html {
 
 			img {
 				display: none;
+			}
+		}
+
+		#projects {
+			#section-title {
+				font-size: 4vw;
+				margin-bottom: 2rem;
+			}
+
+			#nft-desktop-1,
+			#nft-desktop-2,
+			#tenet-desktop-1 {
+				display: none;
+			}
+
+			img {
+				margin: auto;
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+
+			.project-title {
+				color: var(--primary-colour);
+				font-size: 3vw;
+				font-weight: bold;
+				margin-bottom: 1rem;
+			}
+
+			.project-description {
+				margin-bottom: 1rem;
+			}
+
+			.project-tec {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 1rem;
+
+				.tech-name {
+					font-size: 3.5vw;
+				}
+
+				#html {
+					color: #e86029;
+				}
+
+				#css {
+					color: #379bd5;
+				}
+
+				#js {
+					color: #e0be27;
+				}
+			}
+
+			.project-links {
+				margin-bottom: 3rem;
+				a {
+					color: white;
+					font-size: 6vw;
+					text-decoration: none;
+					margin-right: 2rem;
+				}
+			}
+		}
+		#testimonials {
+			background-color: var(--dark-theme-secondary-card-colour);
+			margin: 0;
+			padding: 2rem;
+			.test-flex-box {
+				.test-left {
+					.section-title {
+						font-size: 4vw;
+						font-weight: bold;
+						margin-bottom: 1rem;
+					}
+
+					.section-body {
+						margin-bottom: 1.5rem;
+						font-size: 2.5vw;
+					}
+
+					.listen-to {
+						font-size: 2.6vw;
+						margin-bottom: 2rem;
+					}
+				}
+
+				.test-right {
+					background-color: #3f3f50;
+
+					padding: 1rem;
+
+					.card-body {
+						font-size: 2.5vw;
+						margin-bottom: 1rem;
+					}
+				}
 			}
 		}
 	}
@@ -430,49 +529,87 @@ html {
 				font-size: 2vw;
 				margin-bottom: 0.5rem;
 			}
+
+			.screenshot-mobile {
+				display: none;
+			}
 			.project-flex-box {
 				display: flex;
 				align-items: center;
-				margin-bottom: 10rem;
+				margin-block: 0 5rem;
 
 				.left-project {
-					max-width: 55%;
+					background-color: var(--dark-theme-secondary-card-colour);
+					padding: 2rem 2rem 0 2rem;
+					max-width: 50%;
+
 					img {
-						width: 90%;
+						margin: auto;
 					}
 
 					#nft-image-1 {
-						display: none;
+						margin-bottom: 2rem;
+						width: 3%;
 					}
 				}
 
 				.right-project {
-					margin-left: 0.5rem;
 					text-align: right;
+					margin-left: 1rem;
 
 					.project-title {
 						color: var(--primary-colour);
-						font-size: 1.4vw;
+						font-size: 1.2vw;
 						font-weight: bold;
 						margin-bottom: 1rem;
 					}
 
 					.project-description {
-						font-size: 1vw;
+						font-size: 0.9vw;
+						margin-bottom: 1rem;
+					}
+
+					#nft-tech {
+						justify-items: right;
+						margin: 0 0 1rem 1rem;
 					}
 
 					.project-tec {
-						font-size: 1.3vw;
-						margin: 2rem 0;
+						display: flex;
+						justify-content: space-between;
+						margin: 0 1rem 1rem 0;
+
+						.tech-name {
+							font-size: 1.2vw;
+						}
+
+						#html {
+							color: #e86029;
+						}
+
+						#css {
+							color: #379bd5;
+						}
+
+						#js {
+							color: #e0be27;
+						}
 					}
 					.project-links {
 						a {
 							color: white;
 							text-decoration: none;
+						}
+					}
+					#nft-links {
+						a {
+							margin: 0 0 0 2rem;
+						}
+					}
 
-							#link-to-website {
-								margin: 0 2rem;
-							}
+					#tenet-links {
+						a {
+							margin: 0 2rem 0 0;
 						}
 					}
 				}
@@ -485,23 +622,15 @@ html {
 					text-align: left;
 					margin-right: 0.5rem;
 
-					.project-links {
-						a {
-							color: white;
-							text-decoration: none;
-
-							#link-to-website {
-								margin: 2rem;
-							}
-						}
+					#link-to-website {
+						margin: 0 2rem 0 0;
 					}
 				}
-			}
-			#tenet-left {
-				img {
-					margin: auto;
-					width: 90%;
-					float: right;
+				#tenet-left {
+					img {
+						margin: auto;
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -740,6 +869,10 @@ html {
 				font-size: 2vw;
 				margin-bottom: 0.5rem;
 			}
+
+			.screenshot-mobile {
+				display: none;
+			}
 			.project-flex-box {
 				display: flex;
 				align-items: center;
@@ -773,20 +906,50 @@ html {
 
 					.project-description {
 						font-size: 0.9vw;
+						margin-bottom: 1rem;
+					}
+
+					#nft-tech {
+						justify-items: right;
+						margin: 0 0 1rem 1rem;
 					}
 
 					.project-tec {
-						font-size: 1vw;
-						margin: 2rem 0;
+						display: flex;
+						justify-content: space-between;
+						margin: 0 1rem 1rem 0;
+
+						.tech-name {
+							font-size: 1.2vw;
+						}
+
+						#html {
+							color: #e86029;
+						}
+
+						#css {
+							color: #379bd5;
+						}
+
+						#js {
+							color: #e0be27;
+						}
 					}
 					.project-links {
 						a {
 							color: white;
 							text-decoration: none;
+						}
+					}
+					#nft-links {
+						a {
+							margin: 0 0 0 2rem;
+						}
+					}
 
-							#link-to-website {
-								margin: 0 2rem;
-							}
+					#tenet-links {
+						a {
+							margin: 0 2rem 0 0;
 						}
 					}
 				}
@@ -1035,15 +1198,19 @@ html {
 				font-size: 2vw;
 				margin-bottom: 0.5rem;
 			}
+
+			.screenshot-mobile {
+				display: none;
+			}
 			.project-flex-box {
 				display: flex;
 				align-items: center;
+				margin-block: 0 5rem;
 
 				.left-project {
 					background-color: var(--dark-theme-secondary-card-colour);
 					padding: 2rem 2rem 0 2rem;
-					margin: 0 0 15rem 0;
-					max-width: 500px;
+					max-width: 50%;
 
 					img {
 						margin: auto;
@@ -1061,28 +1228,57 @@ html {
 
 					.project-title {
 						color: var(--primary-colour);
-						font-size: 1.4vw;
+						font-size: 1.2vw;
 						font-weight: bold;
 						margin-bottom: 1rem;
 					}
 
 					.project-description {
-						font-size: 0.8vw;
+						font-size: 0.9vw;
+						margin-bottom: 2rem;
+					}
+
+					#nft-tech {
+						justify-items: right;
+						margin: 0 0 2rem 1rem;
 					}
 
 					.project-tec {
-						font-size: 1vw;
-						margin: 2rem 0;
-					}
+						display: flex;
+						justify-content: space-between;
+						margin: 0 1rem 2rem 0;
 
+						.tech-name {
+							font-size: 1.2vw;
+						}
+
+						#html {
+							color: #e86029;
+						}
+
+						#css {
+							color: #379bd5;
+						}
+
+						#js {
+							color: #e0be27;
+						}
+					}
 					.project-links {
 						a {
 							color: white;
 							text-decoration: none;
+						}
+					}
+					#nft-links {
+						a {
+							margin: 0 0 0 2rem;
+						}
+					}
 
-							#link-to-website {
-								margin: 0 2rem;
-							}
+					#tenet-links {
+						a {
+							margin: 0 2rem 0 0;
 						}
 					}
 				}

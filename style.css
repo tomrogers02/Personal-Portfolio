@@ -59,6 +59,8 @@ html {
     top: 0;
     padding: 2rem;
     z-index: 999;
+    background-color: var(--background-dark);
+    height: 3vh;
   }
   body header #mobile-cta {
     font-size: 7vw;
@@ -165,7 +167,7 @@ html {
     margin-bottom: 2rem;
   }
   body .desktop-hero .mobile-hero .central-hero #main-title {
-    font-size: 6vw;
+    font-size: 6.5vw;
     font-weight: bold;
     margin-inline: 3rem;
     margin-bottom: 2rem;
@@ -184,6 +186,81 @@ html {
   }
   body #about img {
     display: none;
+  }
+  body #projects #section-title {
+    font-size: 4vw;
+    margin-bottom: 2rem;
+  }
+  body #projects #nft-desktop-1,
+body #projects #nft-desktop-2,
+body #projects #tenet-desktop-1 {
+    display: none;
+  }
+  body #projects img {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  body #projects .project-title {
+    color: var(--primary-colour);
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  body #projects .project-description {
+    margin-bottom: 1rem;
+  }
+  body #projects .project-tec {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  body #projects .project-tec .tech-name {
+    font-size: 3.5vw;
+  }
+  body #projects .project-tec #html {
+    color: #e86029;
+  }
+  body #projects .project-tec #css {
+    color: #379bd5;
+  }
+  body #projects .project-tec #js {
+    color: #e0be27;
+  }
+  body #projects .project-links {
+    margin-bottom: 3rem;
+  }
+  body #projects .project-links a {
+    color: white;
+    font-size: 6vw;
+    text-decoration: none;
+    margin-right: 2rem;
+  }
+  body #testimonials {
+    background-color: var(--dark-theme-secondary-card-colour);
+    margin: 0;
+    padding: 2rem;
+  }
+  body #testimonials .test-flex-box .test-left .section-title {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  body #testimonials .test-flex-box .test-left .section-body {
+    margin-bottom: 1.5rem;
+    font-size: 2.5vw;
+  }
+  body #testimonials .test-flex-box .test-left .listen-to {
+    font-size: 2.6vw;
+    margin-bottom: 2rem;
+  }
+  body #testimonials .test-flex-box .test-right {
+    background-color: #3f3f50;
+    padding: 1rem;
+  }
+  body #testimonials .test-flex-box .test-right .card-body {
+    font-size: 2.5vw;
+    margin-bottom: 1rem;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1100px) {
@@ -360,43 +437,70 @@ body #about #about-body-3 {
     font-size: 2vw;
     margin-bottom: 0.5rem;
   }
+  body #projects .screenshot-mobile {
+    display: none;
+  }
   body #projects .project-flex-box {
     display: flex;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-block: 0 5rem;
   }
   body #projects .project-flex-box .left-project {
-    max-width: 55%;
+    background-color: var(--dark-theme-secondary-card-colour);
+    padding: 2rem 2rem 0 2rem;
+    max-width: 50%;
   }
   body #projects .project-flex-box .left-project img {
-    width: 90%;
+    margin: auto;
   }
   body #projects .project-flex-box .left-project #nft-image-1 {
-    display: none;
+    margin-bottom: 2rem;
+    width: 3%;
   }
   body #projects .project-flex-box .right-project {
-    margin-left: 0.5rem;
     text-align: right;
+    margin-left: 1rem;
   }
   body #projects .project-flex-box .right-project .project-title {
     color: var(--primary-colour);
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: bold;
     margin-bottom: 1rem;
   }
   body #projects .project-flex-box .right-project .project-description {
-    font-size: 1vw;
+    font-size: 0.9vw;
+    margin-bottom: 1rem;
+  }
+  body #projects .project-flex-box .right-project #nft-tech {
+    justify-items: right;
+    margin: 0 0 1rem 1rem;
   }
   body #projects .project-flex-box .right-project .project-tec {
-    font-size: 1.3vw;
-    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem 1rem 0;
+  }
+  body #projects .project-flex-box .right-project .project-tec .tech-name {
+    font-size: 1.2vw;
+  }
+  body #projects .project-flex-box .right-project .project-tec #html {
+    color: #e86029;
+  }
+  body #projects .project-flex-box .right-project .project-tec #css {
+    color: #379bd5;
+  }
+  body #projects .project-flex-box .right-project .project-tec #js {
+    color: #e0be27;
   }
   body #projects .project-flex-box .right-project .project-links a {
     color: white;
     text-decoration: none;
   }
-  body #projects .project-flex-box .right-project .project-links a #link-to-website {
-    margin: 0 2rem;
+  body #projects .project-flex-box .right-project #nft-links a {
+    margin: 0 0 0 2rem;
+  }
+  body #projects .project-flex-box .right-project #tenet-links a {
+    margin: 0 2rem 0 0;
   }
   body #projects #tenet-flex-box {
     flex-direction: row-reverse;
@@ -405,17 +509,12 @@ body #about #about-body-3 {
     text-align: left;
     margin-right: 0.5rem;
   }
-  body #projects #tenet-flex-box #tenet-right .project-links a {
-    color: white;
-    text-decoration: none;
+  body #projects #tenet-flex-box #tenet-right #link-to-website {
+    margin: 0 2rem 0 0;
   }
-  body #projects #tenet-flex-box #tenet-right .project-links a #link-to-website {
-    margin: 2rem;
-  }
-  body #projects #tenet-left img {
+  body #projects #tenet-flex-box #tenet-left img {
     margin: auto;
-    width: 90%;
-    float: right;
+    width: 100%;
   }
   body #testimonials {
     background-color: var(--dark-theme-secondary-card-colour);
@@ -612,6 +711,9 @@ body header #nav-mobile-bottom {
     font-size: 2vw;
     margin-bottom: 0.5rem;
   }
+  body #projects .screenshot-mobile {
+    display: none;
+  }
   body #projects .project-flex-box {
     display: flex;
     align-items: center;
@@ -641,17 +743,38 @@ body header #nav-mobile-bottom {
   }
   body #projects .project-flex-box .right-project .project-description {
     font-size: 0.9vw;
+    margin-bottom: 1rem;
+  }
+  body #projects .project-flex-box .right-project #nft-tech {
+    justify-items: right;
+    margin: 0 0 1rem 1rem;
   }
   body #projects .project-flex-box .right-project .project-tec {
-    font-size: 1vw;
-    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem 1rem 0;
+  }
+  body #projects .project-flex-box .right-project .project-tec .tech-name {
+    font-size: 1.2vw;
+  }
+  body #projects .project-flex-box .right-project .project-tec #html {
+    color: #e86029;
+  }
+  body #projects .project-flex-box .right-project .project-tec #css {
+    color: #379bd5;
+  }
+  body #projects .project-flex-box .right-project .project-tec #js {
+    color: #e0be27;
   }
   body #projects .project-flex-box .right-project .project-links a {
     color: white;
     text-decoration: none;
   }
-  body #projects .project-flex-box .right-project .project-links a #link-to-website {
-    margin: 0 2rem;
+  body #projects .project-flex-box .right-project #nft-links a {
+    margin: 0 0 0 2rem;
+  }
+  body #projects .project-flex-box .right-project #tenet-links a {
+    margin: 0 2rem 0 0;
   }
   body #projects #tenet-flex-box {
     flex-direction: row-reverse;
@@ -853,15 +976,18 @@ body header #nav-mobile-bottom {
     font-size: 2vw;
     margin-bottom: 0.5rem;
   }
+  body #projects .screenshot-mobile {
+    display: none;
+  }
   body #projects .project-flex-box {
     display: flex;
     align-items: center;
+    margin-block: 0 5rem;
   }
   body #projects .project-flex-box .left-project {
     background-color: var(--dark-theme-secondary-card-colour);
     padding: 2rem 2rem 0 2rem;
-    margin: 0 0 15rem 0;
-    max-width: 500px;
+    max-width: 50%;
   }
   body #projects .project-flex-box .left-project img {
     margin: auto;
@@ -876,23 +1002,44 @@ body header #nav-mobile-bottom {
   }
   body #projects .project-flex-box .right-project .project-title {
     color: var(--primary-colour);
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: bold;
     margin-bottom: 1rem;
   }
   body #projects .project-flex-box .right-project .project-description {
-    font-size: 0.8vw;
+    font-size: 0.9vw;
+    margin-bottom: 2rem;
+  }
+  body #projects .project-flex-box .right-project #nft-tech {
+    justify-items: right;
+    margin: 0 0 2rem 1rem;
   }
   body #projects .project-flex-box .right-project .project-tec {
-    font-size: 1vw;
-    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem 2rem 0;
+  }
+  body #projects .project-flex-box .right-project .project-tec .tech-name {
+    font-size: 1.2vw;
+  }
+  body #projects .project-flex-box .right-project .project-tec #html {
+    color: #e86029;
+  }
+  body #projects .project-flex-box .right-project .project-tec #css {
+    color: #379bd5;
+  }
+  body #projects .project-flex-box .right-project .project-tec #js {
+    color: #e0be27;
   }
   body #projects .project-flex-box .right-project .project-links a {
     color: white;
     text-decoration: none;
   }
-  body #projects .project-flex-box .right-project .project-links a #link-to-website {
-    margin: 0 2rem;
+  body #projects .project-flex-box .right-project #nft-links a {
+    margin: 0 0 0 2rem;
+  }
+  body #projects .project-flex-box .right-project #tenet-links a {
+    margin: 0 2rem 0 0;
   }
   body #projects #tenet-flex-box {
     flex-direction: row-reverse;
