@@ -91,7 +91,7 @@ i:hover {
   }
   body #skills .skill-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 19px;
     width: 100%;
   }
@@ -280,13 +280,13 @@ body #projects #tenet-mobile {
   body #projects .right-project .project-tec {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   body #projects .right-project .project-tec .tech-name {
     font-size: 3.5vw;
   }
   body #projects .right-project #tenet-tech {
-    margin-block: 2.5rem 2rem;
+    margin-block: 2.5rem 1rem;
   }
   body #projects .right-project .project-links {
     margin-bottom: 3rem;

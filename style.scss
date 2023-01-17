@@ -106,7 +106,7 @@ i:hover {
 		#skills {
 			.skill-grid {
 				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+				grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 				gap: 19px;
 				width: 100%;
 
@@ -330,14 +330,14 @@ i:hover {
 				.project-tec {
 					display: flex;
 					justify-content: space-between;
-					margin-bottom: 2rem;
+					margin-bottom: 1rem;
 
 					.tech-name {
 						font-size: 3.5vw;
 					}
 				}
 				#tenet-tech {
-					margin-block: 2.5rem 2rem;
+					margin-block: 2.5rem 1rem;
 				}
 
 				.project-links {
