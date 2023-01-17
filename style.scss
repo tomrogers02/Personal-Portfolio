@@ -307,30 +307,47 @@ i:hover {
 				margin-bottom: 2rem;
 			}
 
-			.project-title {
-				color: var(--primary-colour);
-				font-size: 3.5vw;
-				font-weight: bold;
-				margin-bottom: 1rem;
+			#nft-mobile,
+			#tenet-mobile {
+				position: absolute;
+				margin: auto;
+				width: 90%;
+				z-index: 0;
 			}
 
-			.project-tec {
-				display: flex;
-				justify-content: space-between;
-				margin-bottom: 2rem;
+			.right-project {
+				z-index: 900;
+				position: relative;
+				padding: 2rem;
 
-				.tech-name {
+				.project-title {
+					color: var(--primary-colour);
 					font-size: 3.5vw;
+					font-weight: bold;
+					margin-bottom: 1rem;
 				}
-			}
 
-			.project-links {
-				margin-bottom: 3rem;
-				a {
-					color: white;
-					font-size: 6vw;
-					text-decoration: none;
-					margin-right: 2rem;
+				.project-tec {
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 2rem;
+
+					.tech-name {
+						font-size: 3.5vw;
+					}
+				}
+				#tenet-tech {
+					margin-block: 2.5rem 2rem;
+				}
+
+				.project-links {
+					margin-bottom: 3rem;
+					a {
+						color: white;
+						font-size: 6vw;
+						text-decoration: none;
+						margin-right: 2rem;
+					}
 				}
 			}
 		}
@@ -621,7 +638,8 @@ i:hover {
 		}
 
 		#projects {
-			.screenshot-mobile {
+			#tenet-mobile,
+			#nft-mobile {
 				display: none;
 			}
 			.project-flex-box {
@@ -974,7 +992,8 @@ i:hover {
 		}
 
 		#projects {
-			.screenshot-mobile {
+			#tenet-mobile,
+			#nft-mobile {
 				display: none;
 			}
 			.project-flex-box {
@@ -1321,7 +1340,8 @@ i:hover {
 		}
 
 		#projects {
-			.screenshot-mobile {
+			#tenet-mobile,
+			#nft-mobile {
 				display: none;
 			}
 			.project-flex-box {
