@@ -1,90 +1,42 @@
 const toggle = document.getElementById('toggle-dark');
 const body = document.querySelector('body');
 const navStickyBar = document.querySelector('header');
-var navLinks = document.getElementsByClassName("nav-links");
+const navLinks = document.querySelectorAll(".nav-links");
 const heroSecondTitle = document.getElementById('upper-title');
 const heroThirdTitle = document.getElementById('lower-subtitle');
-var socialLinksHero = document.getElementsByClassName('bi');
+const socialLinksHero = document.querySelectorAll('.bi');
 const leftHeroLine = document.getElementById('social-line');
 const emailAddress = document.getElementById('email');
 const navBottom = document.getElementById('nav-mobile-bottom');
 const navMiddle = document.getElementById('nav-right');
 const navTop = document.getElementById('nav-left');
-var projectCard = document.getElementsByClassName("left-project");
+const projectCard = document.querySelectorAll(".left-project");
 const testimonials = document.getElementById('testimonials');
 const testReview = document.getElementById('test-right');
-var skillCard = document.getElementsByClassName('skill-square');
+const skillCard = document.querySelectorAll('.skill-square,.project-flex-box');
 
-
-
-
-
+let isDark = false;
 
 toggle.addEventListener('click', function () {
   this.classList.toggle('bi-sunset-fill');
+  isDark = !isDark;
+  body.style.background = isDark ? '#222229' : '#f5f5f5';
+  body.style.color = isDark ? 'white' : 'black';
+  body.style.transition = '2s';
+  navStickyBar.style.background = isDark ? '#222229' : '#f5f5f5';
+  heroSecondTitle.style.color = isDark ? '#c6c6c6' : 'black';
+  heroThirdTitle.style.color = isDark ? '#c6c6c6' : 'black';
+  emailAddress.style.color = isDark ? 'white' : 'black';
+  navBottom.style.background = isDark ? '#45455a' : '#E5E5E5';
+  navMiddle.style.background = isDark ? '#222229' : '#F5F5F5';
+  navTop.style.background = isDark ? '#222229' : '#f5f5f5';
+  testimonials.style.background = isDark ? '#45455a' : '#A3A3B2';
+  testReview.style.background = isDark ? '#3F3F50' : '#9292A0';
 
-  if (this.classList.toggle('bi-brightness-high-fill')) {
-    body.style.background = '#f5f5f5';
-    body.style.color = 'black';
-    body.style.transition = '2s';
-    navStickyBar.style.background = '#f5f5f5';
-    heroSecondTitle.style.color = ' black'
-    heroThirdTitle.style.color = 'black';
-    emailAddress.style.color = 'black';
-    navBottom.style.background = '#E5E5E5';
-    navMiddle.style.background = '#F5F5F5';
-    navTop.style.background = '#f5f5f5';
-    testimonials.style.background = '#A3A3B2'
-    testReview.style.background = '#9292A0'
-
-    for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].style.color = "black";
-    }
-
-    for (var i = 0; i < socialLinksHero.length; i++) {
-      socialLinksHero[i].style.color = "black";
-    }
-
-    for (var i = 0; i < projectCard.length; i++) {
-      projectCard[i].style.background = "#A3A3B2";
-    }
-
-    for (var i = 0; i < skillCard.length; i++) {
-      skillCard[i].style.background = "#A3A3B2";
-    }
-
-  } else {
-    body.style.background = '#222229';
-    body.style.color = 'white';
-    body.style.transition = '2s';
-
-    navStickyBar.style.background = '#222229';
-    heroSecondTitle.style.color = ' #c6c6c6'
-    heroThirdTitle.style.color = '#c6c6c6';
-    emailAddress.style.color = 'white'
-    navBottom.style.background = '#45455a';
-    navMiddle.style.background = '#222229';
-    navTop.style.background = '#222229';
-    toggle.style.color = 'white'
-    testimonials.style.background = '#45455a'
-    testReview.style.background = '#3F3F50'
-
-    for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].style.color = "white";
-    }
-
-    for (var i = 0; i < socialLinksHero.length; i++) {
-      socialLinksHero[i].style.color = "white";
-    }
-
-    for (var i = 0; i < projectCard.length; i++) {
-      projectCard[i].style.background = "#45455a";
-    }
-
-    for (var i = 0; i < skillCard.length; i++) {
-      skillCard[i].style.background = "#45455a";
-    }
-  }
+  navLinks.forEach(link => link.style.color = isDark ? "white" : "black");
+  socialLinksHero.forEach(link => link.style.color = isDark ? "white" : "black");
+  projectCard.forEach(card => card.style.background = isDark ? "#45455a" : "#A3A3B2");
+  skillCard.forEach(card => card.style.background = isDark ? "#45455a" : "#A3A3B2");
 });
 
 
