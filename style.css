@@ -58,7 +58,7 @@ span {
     margin: auto;
   }
   body .section-title {
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: bold;
     margin-bottom: 2rem;
     text-align: center;
@@ -75,7 +75,7 @@ span {
   }
   body #skills .skill-grid .skill-square {
     background-color: var(--dark-theme-secondary-card-colour);
-    box-shadow: rgba(47, 43, 76, 0.518) 0px 48px 100px 0px;
+    box-shadow: rgba(11, 10, 13, 0.518) 0px 8px 12px 0px;
     max-width: 170px;
     min-width: 130px;
     max-height: 170px;
@@ -220,6 +220,9 @@ span {
   body .desktop-hero .mobile-hero .central-hero #lower-subtitle {
     margin-inline: 4rem;
     margin-bottom: 2rem;
+  }
+  body .desktop-hero .mobile-hero .central-hero #view-btn {
+    text-decoration: none;
   }
   body #about button {
     margin-top: 3rem;
