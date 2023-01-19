@@ -1,19 +1,16 @@
 const toggle = document.getElementById('toggle-dark');
 const body = document.querySelector('body');
 const navStickyBar = document.querySelector('header');
-var navLinks = document.getElementsByClassName("nav-links");
-const heroSecondTitle = document.getElementById('upper-title');
-const heroThirdTitle = document.getElementById('lower-subtitle');
-var socialLinksHero = document.getElementsByClassName('bi');
-const leftHeroLine = document.getElementById('social-line');
+const navLeft = document.getElementById('nav-left');
+const heroTitles = document.querySelectorAll('#upper-title, #lower-subtitle');
+const navLinks = document.querySelectorAll(".nav-links, .bi");
 const emailAddress = document.getElementById('email');
-const navBottom = document.getElementById('nav-mobile-bottom');
-const navMiddle = document.getElementById('nav-right');
-const navTop = document.getElementById('nav-left');
-
-
-
-
+const navElements = document.querySelectorAll(' #nav-right, #nav-left');
+const navPopupElements = document.querySelectorAll('#nav-mobile-bottom');
+const cards = document.querySelectorAll('.project-flex-box,#testimonials,.skill-square');
+const cardText = document.querySelectorAll('.project-title,.mobile-desc,.desktop-desc,.test-left,.card-body,.test-company-name,.skill-name,.tech-name');
+const techName = document.querySelectorAll('.tech-name');
+const testCard = document.getElementById('test-right');
 
 toggle.addEventListener('click', function () {
   this.classList.toggle('bi-sunset-fill');
@@ -22,52 +19,33 @@ toggle.addEventListener('click', function () {
     body.style.background = '#f5f5f5';
     body.style.color = 'black';
     body.style.transition = '2s';
+    testCard.style.background = '#D6D6D6'
     navStickyBar.style.background = '#f5f5f5';
-    heroSecondTitle.style.color = ' black'
-    heroThirdTitle.style.color = 'black';
+    heroTitles.forEach(title => title.style.color = 'black');
     emailAddress.style.color = 'black';
-    navBottom.style.background = '#E5E5E5';
-    navMiddle.style.background = '#F5F5F5';
-    navTop.style.background = '#f5f5f5';
-
-
-    for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].style.color = "black";
-    }
-
-    for (var i = 0; i < socialLinksHero.length; i++) {
-      socialLinksHero[i].style.color = "black";
-    }
-    s
-
-
-
-
-
+    navElements.forEach(nav => nav.style.background = '#f5f5f5');
+    navLinks.forEach(link => link.style.color = 'black');
+    cards.forEach(link => link.style.background = '#E5E5E5')
+    techName.forEach(link => link.style.color = 'black');
+    navPopupElements.forEach(link => link.style.background = '#E5E5E5')
 
   } else {
     body.style.background = '#222229';
     body.style.color = 'white';
     body.style.transition = '2s';
-
     navStickyBar.style.background = '#222229';
-    heroSecondTitle.style.color = ' #c6c6c6'
-    heroThirdTitle.style.color = '#c6c6c6';
-    emailAddress.style.color = 'white'
-    navBottom.style.background = '#45455a';
-    navMiddle.style.background = '#222229';
-    navTop.style.background = '#222229';
-    toggle.style.color = 'white'
+    heroTitles.forEach(title => title.style.color = '#c6c6c6');
+    emailAddress.style.color = 'white';
+    navElements.forEach(nav => nav.style.background = '#222229');
+    navLinks.forEach(link => link.style.color = 'white');
+    cards.forEach(link => link.style.background = '#262630')
+    navPopupElements.forEach(link => link.style.background = '#262630')
+    techName.forEach(link => link.style.color = 'white');
 
-    for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].style.color = "white";
-    }
 
-    for (var i = 0; i < socialLinksHero.length; i++) {
-      socialLinksHero[i].style.color = "white";
-    }
   }
 });
+
 
 
 const primaryNav = document.getElementById('desktop-nav');
