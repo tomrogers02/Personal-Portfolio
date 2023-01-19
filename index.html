@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="auto">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="alternate" href="https://es.example.com/" hreflang="es" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="icon" href="images/logo-dark.png" />
 		<title>Tom Rogers - Front-End Developer</title>
+		<meta
+			name="description"
+			content="Explore my portfolio and discover my skills in web design, development, and digital marketing. Let's build something amazing together!"
+		/>
 
 		<link
 			rel="stylesheet"
@@ -32,12 +37,18 @@
 					</div>
 					<div id="nav-right">
 						<ul>
-							<a href="#about" class="nav-links">01. About</a>
-							<a href="#projects" class="nav-links">02. Projects</a>
-							<a href="#skills" class="nav-links">03. Skills</a>
-							<a href="#contact" class="nav-links">04. Contact</a>
+							<li>
+								<a href="#about" class="nav-links" id="about">01. About</a>
+								<a href="#projects" class="nav-links" id="project"
+									>02. Projects</a
+								>
+								<a href="#skills" class="nav-links" id="skill">03. Skills</a>
+								<a href="#contact" class="nav-links" id="contact"
+									>04. Contact</a
+								>
+							</li>
 						</ul>
-						<a href="CV 2.pdf" target="_blank">
+						<a href="CV-2.pdf" target="_blank">
 							<button>Resume</button>
 						</a>
 						<i class="bi bi-brightness-alt-high-fill" id="toggle-dark"></i>
@@ -73,7 +84,7 @@
 				<a href="https://github.com/tomrogers02" target="_blank">
 					<i class="bi bi-github"></i>
 				</a>
-				<img src="images/icons-line.png" alt="" id="social-line" />
+				<img src="images/icons-line.png" alt="" class="social-line" />
 			</div>
 
 			<div class="mobile-hero">
@@ -93,7 +104,7 @@
 					<a href="mailto:tomrogersweb@gmail.com" id="email"
 						><i class="bi bi-envelope-fill"></i>
 					</a>
-					<img src="images/icons-line.png" alt="" id="social-line" />
+					<img src="images/icons-line.png" alt="" class="social-line" />
 				</div>
 			</div>
 		</div>
@@ -143,20 +154,20 @@
 
 					<div class="right-project">
 						<div class="project-title">NFT Concept Website</div>
-						<p class="project-description" id="mobile-desc">
+						<p class="mobile-desc">
 							Replanting the earth with expressive, digital art
 						</p>
-						<p class="project-description" id="desktop-desc">
+						<p class="desktop-desc">
 							A web app where users can trade their favourite digital art,
 							whilst also planting trees through every sale. View NFTs on the
 							marketplace, see how many trees you’ve planted and see where an
 							impact is being made.
 						</p>
 						<div class="project-tech-links">
-							<div class="project-tec" id="nft-tech">
-								<div class="tech-name" id="html">HTML</div>
-								<div class="tech-name" id="css">CSS</div>
-								<div class="tech-name" id="js">JavaScript</div>
+							<div class="project-tec">
+								<div class="tech-name">HTML</div>
+								<div class="tech-name">CSS</div>
+								<div class="tech-name">JavaScript</div>
 							</div>
 
 							<div class="project-links" id="nft-links">
@@ -178,23 +189,23 @@
 
 					<div class="right-project">
 						<div class="project-title">Tenet Consultants LTD</div>
-						<p class="project-description" id="mobile-desc">
+						<p class="mobile-desc">
 							My first client project, working collaboratively on a weekly basis
 							to design and implement affective career advertisements.
 						</p>
 
-						<p class="project-description" id="desktop-desc">
+						<p class="desktop-desc">
 							Collaborating with Tenet on a weekly basis to design and implement
 							affective job opportunities provided plenty of experience.
 							Delegating, developing and designing this project was pivotal in
 							my progression as a developer.
 						</p>
 						<div class="project-tech-links">
-							<div class="project-tec" id="nft-tech">
-								<div class="tech-name" id="html">HTML</div>
-								<div class="tech-name" id="css">CSS</div>
-								<div class="tech-name" id="js">JavaScript</div>
-								<div class="tech-name" id="wp">Wordpress</div>
+							<div class="project-tec">
+								<div class="tech-name">HTML</div>
+								<div class="tech-name">CSS</div>
+								<div class="tech-name">JavaScript</div>
+								<div class="tech-name">Wordpress</div>
 							</div>
 						</div>
 					</div>
@@ -236,31 +247,31 @@
 			<div class="section-title"><span>03.</span> Skills and Expertise</div>
 
 			<div class="skill-grid">
-				<div class="skill-square" id="">
+				<div class="skill-square">
 					<img src="images/html.png" alt="" />
 					<div class="skill-name" id="hmtl">HTML</div>
 				</div>
-				<div class="skill-square" id="">
+				<div class="skill-square">
 					<img src="images/css.png" alt="" id="css-icon" />
 					<div class="skill-name" id="css">CSS</div>
 				</div>
-				<div class="skill-square" id="">
+				<div class="skill-square">
 					<img src="images/js.png" alt="" />
 					<div class="skill-name" id="js">JavaScript</div>
 				</div>
-				<div class="skill-square" id="">
+				<div class="skill-square">
 					<img src="images/react.png" alt="" />
 					<div class="skill-name" id="react">React</div>
 				</div>
-				<div class="skill-square" id="">
+				<div class="skill-square">
 					<img src="images/figma.png" alt="" />
 					<div class="skill-name" id="figma">Figma</div>
 				</div>
-				<div class="skill-square" id="">
+				<div class="skill-square">
 					<img src="images/xd.png" alt="" />
 					<div class="skill-name" id="xd">Adobe XD</div>
 				</div>
-				<div class="skill-square" id="">
+				<div class="skill-square">
 					<img src="images/wp.png" alt="" />
 					<div class="skill-name" id="wp">Wordpress</div>
 				</div>
@@ -273,7 +284,7 @@
 				I am always looking for new opportunities and to make new connections,
 				so my inbox is always open.
 			</p>
-			<a href="mailto:tomrogersweb@gmail.com" id="email"
+			<a href="mailto:tomrogersweb@gmail.com"
 				><button id="btn-email">Say Hello</button>
 			</a>
 		</section>
@@ -281,6 +292,6 @@
 		<footer>
 			<p id="footer-copyright">Designed & Built By Tom Rogers</p>
 		</footer>
+		<script src="style.js"></script>
 	</body>
-	<script src="style.js"></script>
 </html>
