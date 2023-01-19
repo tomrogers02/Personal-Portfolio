@@ -1,3 +1,7 @@
+/** Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
@@ -8,7 +12,7 @@
   --dark-theme-secondary-card-colour: #262630;
   --light-theme-secondary-card-colour: #5d5d76;
   --dark-theme-primary-font-colour: #ffffff;
-  --dark-theme-secondary-font-colour: #c6c6c6;
+  --dark-theme-secondary-font-colour: #a0a0a0;
   --light-theme-primary-font-colour: #000000;
   --light-theme-secondary-font-colour: #4a4a4a;
 }
@@ -20,6 +24,7 @@ img:hover {
 
 html {
   scroll-behavior: smooth;
+  font-family: poppins, serif;
 }
 
 #footer-copyright {
@@ -36,10 +41,13 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: var(--background-dark);
-    font-family: poppins;
     color: white;
     margin: 0;
     padding: 0;
@@ -72,6 +80,7 @@ a {
     margin-block: 1rem;
   }
   body #skills .skill-grid {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 19px;
@@ -79,7 +88,7 @@ a {
   }
   body #skills .skill-grid .skill-square {
     background-color: var(--dark-theme-secondary-card-colour);
-    box-shadow: rgba(11, 10, 13, 0.518) 0px 8px 12px 0px;
+    box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
     max-width: 170px;
     min-width: 130px;
     max-height: 170px;
@@ -88,6 +97,8 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
   }
   body #skills .skill-grid .skill-square img {
@@ -114,6 +125,11 @@ a {
   body header #mobile-cta {
     font-size: 9vw;
     float: right;
+  }
+  body header #desktop-nav[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
   }
   body header #desktop-nav {
     position: fixed;
@@ -160,9 +176,6 @@ a {
   body header #desktop-nav #nav-right #toggle-dark {
     font-size: 5vw;
   }
-  body header #desktop-nav #hamburger-menu {
-    display: none;
-  }
   body header #desktop-nav #nav-mobile-bottom {
     background-color: var(--dark-theme-secondary-card-colour);
     position: absolute;
@@ -177,11 +190,6 @@ a {
   }
   body header #desktop-nav #nav-mobile-bottom .logo-links a {
     color: white;
-  }
-  body header #desktop-nav[data-visible=true] {
-    display: block;
-    transform: translateX(0%);
-    transition: 0.2s ease-out;
   }
   body .desktop-hero {
     display: flex;
@@ -230,14 +238,13 @@ a {
     display: none;
   }
   body #projects #nft-blue,
-body #projects #nft-yellow,
-body #projects #desktop-desc {
+body #projects #nft-yellow {
     display: none;
   }
   body #projects .project-flex-box {
     background-color: #2a2a33;
     border-radius: 10px;
-    box-shadow: rgba(35, 35, 65, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(12, 11, 15, 0.206) 0px 10px 12px 0px;
     display: flex;
     gap: 50px;
     flex-direction: column-reverse;
@@ -253,7 +260,7 @@ body #projects #desktop-desc {
     width: 250px;
     height: 350px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 5px;
     margin: auto;
   }
@@ -272,9 +279,6 @@ body #projects #desktop-desc {
     font-size: 5vw;
     font-weight: bold;
   }
-  body #projects .project-flex-box .right-project .project-description {
-    font-size: 4vw;
-  }
   body #projects .project-flex-box .right-project .project-tech-links {
     display: flex;
     align-items: center;
@@ -282,10 +286,11 @@ body #projects #desktop-desc {
   }
   body #projects .project-flex-box .right-project .project-tech-links .project-tec {
     display: flex;
-    gap: 20px;
+    gap: 10px;
   }
   body #projects .project-flex-box .right-project .project-tech-links .project-tec .tech-name {
     color: white;
+    font-size: 3vw;
   }
   body #projects .project-flex-box .right-project .project-tech-links .project-links a {
     color: white;
@@ -301,6 +306,7 @@ body #projects #desktop-desc {
     background-color: var(--dark-theme-secondary-card-colour);
     margin: 0;
     padding: 2rem;
+    box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
   }
   body #testimonials .test-flex-box .test-left .section-title {
     font-size: 4vw;
@@ -343,7 +349,6 @@ body #projects #desktop-desc {
   body {
     background-color: var(--background-dark);
     color: white;
-    font-family: poppins;
   }
   body section {
     margin: 10rem 5rem;
@@ -374,6 +379,7 @@ body #projects #desktop-desc {
     margin-block: 1rem;
   }
   body #skills .skill-grid {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
     gap: 20px;
@@ -381,7 +387,7 @@ body #projects #desktop-desc {
   }
   body #skills .skill-grid .skill-square {
     background-color: var(--dark-theme-secondary-card-colour);
-    box-shadow: rgba(12, 11, 15, 0.518) 0px 8px 12px 0px;
+    box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
     max-width: 170px;
     min-width: 130px;
     max-height: 170px;
@@ -390,6 +396,8 @@ body #projects #desktop-desc {
     display: flex;
     flex-direction: column;
     text-align: center;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
   }
   body #skills .skill-grid .skill-square img {
@@ -457,9 +465,6 @@ body #projects #desktop-desc {
   body header #desktop-nav #nav-right #toggle-dark {
     font-size: 3vw;
   }
-  body header #desktop-nav #hamburger-menu {
-    display: none;
-  }
   body header #desktop-nav #nav-mobile-bottom {
     background-color: var(--dark-theme-secondary-card-colour);
     position: absolute;
@@ -473,11 +478,6 @@ body #projects #desktop-desc {
   }
   body header #desktop-nav #nav-mobile-bottom .logo-links a {
     color: white;
-  }
-  body header #desktop-nav[data-visible=true] {
-    display: block;
-    transform: translateX(0%);
-    transition: 0.2s ease-out;
   }
   body .desktop-hero {
     display: flex;
@@ -536,7 +536,7 @@ body #projects #desktop-desc {
   body #projects .desktop-flex-box .project-flex-box {
     background-color: #2a2a33;
     border-radius: 10px;
-    box-shadow: rgba(12, 11, 15, 0.518) 0px 8px 12px 0px;
+    box-shadow: rgba(12, 11, 15, 0.206) 0px 10px 12px 0px;
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column-reverse;
@@ -557,14 +557,14 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     width: 160px;
     height: 200px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 6px;
   }
   body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #nft-mobile {
     width: 170px;
     height: 280px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 6px;
   }
   body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box button {
@@ -583,9 +583,6 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     font-size: 1.8vw;
     font-weight: bold;
   }
-  body #projects .desktop-flex-box .project-flex-box .right-project .project-description {
-    font-size: 1vw;
-  }
   body #projects .desktop-flex-box .project-flex-box .right-project .project-tech-links {
     display: flex;
     align-items: center;
@@ -603,13 +600,11 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     color: white;
     font-size: 1.8vw;
   }
-  body #projects .desktop-flex-box .project-flex-box .right-project #mobile-desc {
-    display: none;
-  }
   body #testimonials {
     background-color: var(--dark-theme-secondary-card-colour);
     margin: 0;
     padding: 5rem 5rem;
+    box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
   }
   body #testimonials .test-flex-box {
     display: flex;
@@ -650,7 +645,6 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
   body {
     background-color: var(--background-dark);
     color: white;
-    font-family: poppins;
   }
   body section {
     margin: 20rem 12rem;
@@ -695,6 +689,7 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     transition: 0.1s ease;
   }
   body #skills .skill-grid {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 20px;
@@ -702,13 +697,15 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
   }
   body #skills .skill-grid .skill-square {
     background-color: var(--dark-theme-secondary-card-colour);
-    box-shadow: rgba(12, 11, 15, 0.518) 0px 8px 12px 0px;
+    box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
     width: 160px;
     height: 160px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
     place-self: center;
     margin-bottom: 50px;
     border-radius: 6px;
@@ -727,9 +724,6 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  body header #desktop-nav #hamburger-menu {
-    display: none;
   }
   body header #desktop-nav #nav-left {
     display: flex;
@@ -755,9 +749,6 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
   body header #desktop-nav #nav-right ul a:hover {
     color: white;
     transition: 0.1s ease;
-  }
-  body header #desktop-nav #nav-right ul a.dark {
-    color: black;
   }
   body header #desktop-nav #nav-right #toggle-dark {
     margin-left: 1rem;
@@ -849,7 +840,7 @@ body header #nav-mobile-bottom {
   body #projects .desktop-flex-box .project-flex-box {
     background-color: #2a2a33;
     border-radius: 10px;
-    box-shadow: rgba(12, 11, 15, 0.518) 0px 8px 12px 0px;
+    box-shadow: rgba(12, 11, 15, 0.206) 0px 10px 12px 0px;
     display: flex;
     flex-direction: column-reverse;
     width: 50%;
@@ -869,14 +860,14 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     width: 160px;
     height: 200px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 6px;
   }
   body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #nft-mobile {
     width: 170px;
     height: 280px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 6px;
   }
   body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box button {
@@ -895,9 +886,6 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     font-size: 1.8vw;
     font-weight: bold;
   }
-  body #projects .desktop-flex-box .project-flex-box .right-project .project-description {
-    font-size: 1vw;
-  }
   body #projects .desktop-flex-box .project-flex-box .right-project .project-tech-links {
     display: flex;
     align-items: center;
@@ -915,14 +903,11 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     color: white;
     font-size: 1.8vw;
   }
-  body #projects .desktop-flex-box .project-flex-box .right-project #mobile-desc {
-    display: none;
-  }
   body #testimonials {
     background-color: var(--dark-theme-secondary-card-colour);
     margin: 0;
     padding: 5rem 11rem;
-    box-shadow: rgba(37, 30, 78, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
   }
   body #testimonials .test-flex-box {
     display: flex;
