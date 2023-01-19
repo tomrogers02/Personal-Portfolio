@@ -36,6 +36,7 @@ html {
 
 span {
   color: var(--secondary-orange);
+  font-family: roboto mono;
 }
 
 a {
