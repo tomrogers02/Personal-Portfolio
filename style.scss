@@ -37,6 +37,10 @@ span {
 	color: var(--secondary-orange);
 }
 
+a {
+	text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
 	body {
 		background-color: var(--background-dark);
@@ -163,7 +167,7 @@ span {
 						margin: 0;
 						a {
 							display: block;
-							text-decoration: none;
+
 							color: white;
 							padding-block: 1.5rem;
 						}
@@ -196,7 +200,6 @@ span {
 
 						a {
 							color: white;
-							text-decoration: none;
 						}
 					}
 				}
@@ -226,7 +229,6 @@ span {
 					margin-inline: 1rem;
 				}
 				a {
-					text-decoration: none;
 					color: white;
 				}
 			}
@@ -253,10 +255,7 @@ span {
 					#lower-subtitle {
 						margin-inline: 4rem;
 						margin-bottom: 2rem;
-					}
-
-					#view-btn {
-						text-decoration: none;
+						font-size: 2.5vw;
 					}
 				}
 			}
@@ -405,9 +404,6 @@ span {
 				margin-inline: 1rem;
 			}
 
-			a {
-				text-decoration: none;
-			}
 			#btn-email {
 				font-size: 3vw;
 				margin-top: 3rem;
@@ -538,7 +534,7 @@ span {
 						margin: 0;
 						a {
 							display: block;
-							text-decoration: none;
+
 							color: rgb(99, 99, 99);
 							padding-block: 1.3rem;
 						}
@@ -570,7 +566,6 @@ span {
 
 						a {
 							color: white;
-							text-decoration: none;
 						}
 					}
 				}
@@ -602,7 +597,6 @@ span {
 
 				a {
 					color: white;
-					text-decoration: none;
 				}
 			}
 			.mobile-hero {
@@ -628,10 +622,6 @@ span {
 					#lower-subtitle {
 						margin-inline: 10rem;
 						margin-bottom: 2rem;
-					}
-
-					#view-btn {
-						text-decoration: none;
 					}
 				}
 			}
@@ -786,9 +776,6 @@ span {
 				margin-inline: 6em;
 			}
 
-			a {
-				text-decoration: none;
-			}
 			#btn-email {
 				font-size: 1.5vw;
 				margin-top: 3rem;
@@ -915,7 +902,7 @@ span {
 						a {
 							color: rgb(120, 120, 120);
 							padding-right: 2rem;
-							text-decoration: none;
+
 							font-size: 1rem;
 							transition: 0.2s ease;
 						}
@@ -957,7 +944,6 @@ span {
 					margin-bottom: 1rem;
 					font-size: 1.4vw;
 					color: white;
-					text-decoration: none;
 
 					a:hover {
 						transform: scale(1.1);
@@ -989,10 +975,6 @@ span {
 						font-size: 1vw;
 						color: var(--dark-theme-secondary-font-colour);
 					}
-
-					#view-btn {
-						text-decoration: none;
-					}
 				}
 				.right-hero-email {
 					display: flex;
@@ -1008,7 +990,6 @@ span {
 						margin-bottom: 1rem;
 						font-size: 1.6vw;
 						color: white;
-						text-decoration: none;
 
 						a:hover {
 							transform: scale(1.01);
@@ -1179,10 +1160,6 @@ span {
 
 			.section-body {
 				margin-inline: 16rem;
-			}
-
-			a {
-				text-decoration: none;
 			}
 			#btn-email {
 				font-size: 1.2vw;
