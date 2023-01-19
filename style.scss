@@ -34,6 +34,7 @@ img:hover {
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 80px;
 	font-family: poppins, serif;
 }
 
@@ -300,7 +301,7 @@ li {
 					#lower-subtitle {
 						margin-inline: 4rem;
 						margin-bottom: 2rem;
-						font-size: 2.5vw;
+						font-size: 2.8vw;
 					}
 				}
 			}
@@ -1340,16 +1341,6 @@ li {
 						font-size: 1vw;
 						margin-bottom: 1rem;
 					}
-				}
-				#test-right:hover {
-					-webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 60px 0px;
-					box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 60px 0px;
-					-webkit-transform: scale(1.05);
-					-ms-transform: scale(1.05);
-					transform: scale(1.05);
-					-webkit-transition: 0.2s ease;
-					-o-transition: 0.2s ease;
-					transition: 0.2s ease;
 				}
 			}
 		}

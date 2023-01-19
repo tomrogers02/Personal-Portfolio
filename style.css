@@ -24,6 +24,7 @@ img:hover {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
   font-family: poppins, serif;
 }
 
@@ -229,7 +230,7 @@ li {
   body .desktop-hero .mobile-hero .central-hero #lower-subtitle {
     margin-inline: 4rem;
     margin-bottom: 2rem;
-    font-size: 2.5vw;
+    font-size: 2.8vw;
   }
   body #about button {
     margin-top: 3rem;
@@ -926,11 +927,6 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
   body #testimonials .test-flex-box #test-right .card-body {
     font-size: 1vw;
     margin-bottom: 1rem;
-  }
-  body #testimonials .test-flex-box #test-right:hover {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 60px 0px;
-    transform: scale(1.05);
-    transition: 0.2s ease;
   }
   body #contact {
     text-align: center;

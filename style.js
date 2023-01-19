@@ -33,6 +33,7 @@ toggle.addEventListener('click', function () {
     body.style.background = '#222229';
     body.style.color = 'white';
     body.style.transition = '2s';
+    testCard.style.background = '#3f3f50'
     navStickyBar.style.background = '#222229';
     heroTitles.forEach(title => title.style.color = '#c6c6c6');
     emailAddress.style.color = 'white';
