@@ -274,7 +274,7 @@ body #projects #nft-yellow {
   body #projects .project-flex-box .left-project #tenet-mobile {
     width: 80%;
     margin-bottom: 2rem;
-    box-shadow: #18181d 0 5px 15px;
+    box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
     float: right;
   }
   body #projects .project-flex-box .right-project .project-title {
@@ -575,7 +575,7 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
   body #projects .desktop-flex-box .project-flex-box #tenet-mobile {
     width: 80%;
     margin-bottom: 2rem;
-    box-shadow: #18181d 0 5px 15px;
+    box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
     float: right;
   }
   body #projects .desktop-flex-box .project-flex-box .right-project {
@@ -878,7 +878,7 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
   body #projects .desktop-flex-box .project-flex-box #tenet-mobile {
     width: 80%;
     margin-bottom: 2rem;
-    box-shadow: #18181d 0 5px 15px;
+    box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
     float: right;
   }
   body #projects .desktop-flex-box .project-flex-box .right-project {
