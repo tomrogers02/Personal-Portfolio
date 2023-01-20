@@ -141,7 +141,7 @@ li {
 
 				.skill-square:hover {
 					-webkit-box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 60px 0px;
-					box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 60px 0px;
+					box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 30px 0px;
 					-webkit-transform: scale(1.05);
 					-ms-transform: scale(1.05);
 					transform: scale(1.05);
@@ -555,7 +555,7 @@ li {
 
 				.skill-square:hover {
 					-webkit-box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 60px 0px;
-					box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 60px 0px;
+					box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 30px 0px;
 					-webkit-transform: scale(1.05);
 					-ms-transform: scale(1.05);
 					transform: scale(1.05);
@@ -577,6 +577,12 @@ li {
 			#mobile-cta {
 				font-size: 5vw;
 				float: right;
+			}
+
+			#desktop-nav[data-visible="true"] {
+				display: block;
+				transform: translateX(0%);
+				transition: 0.2s ease-out;
 			}
 
 			#desktop-nav {
@@ -629,7 +635,7 @@ li {
 						a {
 							display: block;
 
-							color: rgb(99, 99, 99);
+							color: white;
 							padding-block: 1.3rem;
 						}
 					}
@@ -755,7 +761,7 @@ li {
 					-webkit-box-direction: reverse;
 					-ms-flex-direction: column-reverse;
 					flex-direction: column-reverse;
-
+					margin: 2rem auto;
 					width: 90%;
 
 					.project-links-desktop {

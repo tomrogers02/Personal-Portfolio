@@ -111,7 +111,7 @@ li {
     margin: auto;
   }
   body #skills .skill-grid .skill-square:hover {
-    box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 60px 0px;
+    box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 30px 0px;
     transform: scale(1.05);
     transition: 0.2s ease;
   }
@@ -413,7 +413,7 @@ body #projects #nft-yellow {
     margin: auto;
   }
   body #skills .skill-grid .skill-square:hover {
-    box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 60px 0px;
+    box-shadow: rgba(106, 102, 134, 0.518) 0px 1px 30px 0px;
     transform: scale(1.05);
     transition: 0.2s ease;
   }
@@ -429,6 +429,11 @@ body #projects #nft-yellow {
   body header #mobile-cta {
     font-size: 5vw;
     float: right;
+  }
+  body header #desktop-nav[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
   }
   body header #desktop-nav {
     position: fixed;
@@ -464,7 +469,7 @@ body #projects #nft-yellow {
   }
   body header #desktop-nav #nav-right ul a {
     display: block;
-    color: rgb(99, 99, 99);
+    color: white;
     padding-block: 1.3rem;
   }
   body header #desktop-nav #nav-right button {
@@ -548,6 +553,7 @@ body #projects #nft-yellow {
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column-reverse;
+    margin: 2rem auto;
     width: 90%;
   }
   body #projects .desktop-flex-box .project-flex-box .project-links-desktop {
