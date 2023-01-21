@@ -47,11 +47,6 @@ li {
   list-style-type: none;
 }
 
-#PDF {
-  width: 100%;
-  height: 100vh;
-}
-
 @media only screen and (max-width: 600px) {
   body {
     background-color: var(--background-dark);
@@ -85,6 +80,10 @@ li {
   body p {
     font-size: 3vw;
     margin-block: 1rem;
+  }
+  body #PDF {
+    width: 80%;
+    height: 100vh;
   }
   body #skills .skill-grid {
     display: -ms-grid;
