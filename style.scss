@@ -56,7 +56,6 @@ a {
 li {
 	list-style-type: none;
 }
-
 @media only screen and (max-width: 600px) {
 	body {
 		background-color: var(--background-dark);
@@ -103,7 +102,7 @@ li {
 
 		#PDF {
 			width: 99%;
-			height: 100vh;
+			height: 99vh;
 		}
 
 		#skills {

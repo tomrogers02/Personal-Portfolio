@@ -83,7 +83,7 @@ li {
   }
   body #PDF {
     width: 99%;
-    height: 100vh;
+    height: 99vh;
   }
   body #skills .skill-grid {
     display: -ms-grid;
