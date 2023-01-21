@@ -390,6 +390,10 @@ body #projects #nft-yellow {
     font-size: 1.5vw;
     margin-block: 1rem;
   }
+  body #PDF {
+    width: 80%;
+    height: 100vh;
+  }
   body #skills .skill-grid {
     display: -ms-grid;
     display: grid;
@@ -715,6 +719,10 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
   body i:hover {
     color: var(--primary-colour);
     transition: 0.1s ease;
+  }
+  body #PDF {
+    width: 100%;
+    height: 100vh;
   }
   body #skills .skill-grid {
     display: -ms-grid;

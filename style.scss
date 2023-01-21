@@ -523,6 +523,11 @@ li {
 			margin-block: 1rem;
 		}
 
+		#PDF {
+			width: 80%;
+			height: 100vh;
+		}
+
 		#skills {
 			.skill-grid {
 				display: -ms-grid;
@@ -992,6 +997,11 @@ li {
 			-webkit-transition: 0.1s ease;
 			-o-transition: 0.1s ease;
 			transition: 0.1s ease;
+		}
+
+		#PDF {
+			width: 100%;
+			height: 100vh;
 		}
 
 		#skills {
