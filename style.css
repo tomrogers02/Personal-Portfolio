@@ -82,8 +82,8 @@ li {
     margin-block: 1rem;
   }
   body #PDF {
-    width: 80%;
-    height: 100vh;
+    width: 99%;
+    height: 90vh;
   }
   body #skills .skill-grid {
     display: -ms-grid;
@@ -391,7 +391,7 @@ body #projects #nft-yellow {
     margin-block: 1rem;
   }
   body #PDF {
-    width: 80%;
+    width: 99%;
     height: 100vh;
   }
   body #skills .skill-grid {
@@ -721,7 +721,7 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     transition: 0.1s ease;
   }
   body #PDF {
-    width: 100%;
+    width: 99%;
     height: 100vh;
   }
   body #skills .skill-grid {
