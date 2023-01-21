@@ -52,7 +52,7 @@ toggle.addEventListener('click', function () {
 const primaryNav = document.getElementById('desktop-nav');
 const navToggle = document.getElementById('mobile-cta');
 const mobileExit = document.getElementById('mobile-exit');
-
+const mobileNavExit = document.getElementById('nav-right');
 navToggle.addEventListener('click', () => {
   const visibility = primaryNav.getAttribute('data-visible')
 
@@ -66,6 +66,17 @@ navToggle.addEventListener('click', () => {
 
 
 mobileExit.addEventListener('click', () => {
+  const visibility = primaryNav.getAttribute("data-visible")
+
+  console.log(visibility)
+
+  if (visibility === "true") {
+    primaryNav.setAttribute("data-visible", false)
+  }
+
+});
+
+mobileNavExit.addEventListener('click', () => {
   const visibility = primaryNav.getAttribute("data-visible")
 
   console.log(visibility)
