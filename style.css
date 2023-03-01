@@ -86,7 +86,6 @@ li {
     height: 99vh;
   }
   body #skills .skill-grid {
-    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 19px;
@@ -120,7 +119,6 @@ li {
     transition: 0.2s ease;
   }
   body header {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     padding: 1rem;
@@ -244,7 +242,7 @@ li {
     display: none;
   }
   body #projects #nft-blue,
-body #projects #nft-yellow {
+  body #projects #nft-yellow {
     display: none;
   }
   body #projects .project-flex-box {
@@ -337,6 +335,29 @@ body #projects #nft-yellow {
     font-size: 2.5vw;
     margin-bottom: 1rem;
   }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name {
+    display: flex;
+    align-items: center;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name img {
+    width: 15%;
+    height: 15%;
+    margin-right: 1rem;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name .test-name .person-name {
+    font-size: 2.6vw;
+    padding: 0;
+    margin: 0;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name .test-name .company-name {
+    font-size: 2vw;
+  }
+  body #testimonials .test-flex-box #test-right .reference-link {
+    color: rgb(187, 187, 187);
+  }
+  body #testimonials .test-flex-box #test-right .reference-link p {
+    font-size: 2.6vw;
+  }
   body #contact {
     text-align: center;
     margin-bottom: 8rem;
@@ -395,7 +416,6 @@ body #projects #nft-yellow {
     height: 100vh;
   }
   body #skills .skill-grid {
-    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
     gap: 20px;
@@ -429,7 +449,6 @@ body #projects #nft-yellow {
   body header {
     background-color: var(--background-dark);
     height: 5vh;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     padding: 2rem;
@@ -586,7 +605,7 @@ body #projects #nft-yellow {
     justify-content: center;
   }
   body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #nft-yellow,
-body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #nft-blue {
+  body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #nft-blue {
     width: 160px;
     height: 200px;
     -o-object-fit: cover;
@@ -643,6 +662,12 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     display: flex;
     align-items: center;
   }
+  body #testimonials .test-flex-box .test-left {
+    width: 70%;
+  }
+  body #testimonials .test-flex-box .test-left .section-body {
+    font-size: 1.2vw;
+  }
   body #testimonials .test-flex-box #test-right {
     background-color: #3f3f50;
     margin-left: 4rem;
@@ -651,8 +676,30 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     min-width: 150px;
   }
   body #testimonials .test-flex-box #test-right .card-body {
-    font-size: 1.3vw;
+    font-size: 1vw;
     margin-bottom: 1rem;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name {
+    display: flex;
+    align-items: center;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name img {
+    width: 15%;
+    margin-right: 1rem;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name .person-name {
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name .company-name {
+    font-size: 1.4vw;
+  }
+  body #testimonials .test-flex-box #test-right .reference-link {
+    color: rgb(187, 187, 187);
+  }
+  body #testimonials .test-flex-box #test-right .reference-link p {
+    font-size: 1.5vw;
   }
   body #contact {
     text-align: center;
@@ -726,7 +773,6 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     height: 100vh;
   }
   body #skills .skill-grid {
-    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 20px;
@@ -793,7 +839,7 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     font-size: 2.2vw;
   }
   body header #mobile-exit,
-body header #nav-mobile-bottom {
+  body header #nav-mobile-bottom {
     display: none;
   }
   body .desktop-hero {
@@ -904,7 +950,7 @@ body header #nav-mobile-bottom {
     justify-content: center;
   }
   body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #nft-yellow,
-body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #nft-blue {
+  body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #nft-blue {
     width: 160px;
     height: 200px;
     -o-object-fit: cover;
@@ -931,13 +977,14 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
     padding: 2rem;
   }
   body #projects .desktop-flex-box .project-flex-box .right-project .project-title {
-    font-size: 1.8vw;
+    font-size: 1.6vw;
     font-weight: bold;
   }
   body #projects .desktop-flex-box .project-flex-box .right-project .project-tech-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 3rem;
   }
   body #projects .desktop-flex-box .project-flex-box .right-project .project-tech-links .project-tec {
     display: flex;
@@ -964,16 +1011,49 @@ body #projects .desktop-flex-box .project-flex-box .left-project .nft-flex-box #
   body #testimonials .test-flex-box .test-left {
     max-width: 50%;
   }
+  body #testimonials .test-flex-box .test-left span {
+    color: var(--primary-colour);
+    font-family: poppins;
+  }
+  body #testimonials .test-flex-box .test-left .section-body {
+    font-size: 1vw;
+  }
   body #testimonials .test-flex-box #test-right {
     background-color: #3f3f50;
     margin-left: 4rem;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 90%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
-  body #testimonials .test-flex-box #test-right .card-body {
+  body #testimonials .test-flex-box #test-right .card-body-1,
+  body #testimonials .test-flex-box #test-right .card-body-2 {
     font-size: 1vw;
     margin-bottom: 1rem;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name {
+    display: flex;
+    align-items: center;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name img {
+    width: 15%;
+    margin-right: 1rem;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name .person-name {
+    font-size: 1vw;
+    padding: 0;
+    margin: 0;
+  }
+  body #testimonials .test-flex-box #test-right .flex-box-testimonial-name .company-name {
+    font-size: 0.8vw;
+  }
+  body #testimonials .test-flex-box #test-right .reference-link {
+    color: rgb(187, 187, 187);
+  }
+  body #testimonials .test-flex-box #test-right .reference-link p {
+    font-size: 0.8vw;
+  }
+  body #testimonials .test-flex-box #test-right .reference-link:hover {
+    text-decoration: underline;
   }
   body #contact {
     text-align: center;
