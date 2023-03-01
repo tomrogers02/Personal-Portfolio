@@ -260,6 +260,7 @@ li {
   body #projects .project-flex-box .project-links-mobile {
     color: white;
     font-size: 5vw;
+    padding-bottom: 1rem;
   }
   body #projects .project-flex-box #nft-link {
     margin-right: 2rem;
@@ -282,7 +283,6 @@ li {
   }
   body #projects .project-flex-box .left-project #tenet-mobile {
     width: 80%;
-    margin-bottom: 2rem;
     box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
     float: right;
   }

@@ -345,10 +345,12 @@ li {
 				.project-links-mobile {
 					color: white;
 					font-size: 5vw;
+					padding-bottom: 1rem;
 				}
 				#nft-link {
 					margin-right: 2rem;
 				}
+
 				.project-links-desktop {
 					display: none;
 				}
@@ -369,7 +371,6 @@ li {
 					}
 					#tenet-mobile {
 						width: 80%;
-						margin-bottom: 2rem;
 						-webkit-box-shadow: #18181d 0 5px 15px;
 						box-shadow: rgba(12, 11, 15, 0.119) 0px 8px 12px 0px;
 
