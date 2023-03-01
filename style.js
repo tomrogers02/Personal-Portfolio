@@ -11,6 +11,7 @@ const cards = document.querySelectorAll('.project-flex-box,#testimonials,.skill-
 const cardText = document.querySelectorAll('.project-title,.mobile-desc,.desktop-desc,.test-left,.card-body,.test-company-name,.skill-name,.tech-name');
 const techName = document.querySelectorAll('.tech-name');
 const testCard = document.getElementById('test-right');
+const referenceLink = document.querySelector('.reference-link');
 
 toggle.addEventListener('click', function () {
   this.classList.toggle('bi-sunset-fill');
@@ -21,6 +22,7 @@ toggle.addEventListener('click', function () {
     body.style.transition = '2s';
     testCard.style.background = '#D6D6D6'
     navStickyBar.style.background = '#f5f5f5';
+    referenceLink.style.color = 'black';
     heroTitles.forEach(title => title.style.color = 'black');
     emailAddress.style.color = 'black';
     navElements.forEach(nav => nav.style.background = '#f5f5f5');
@@ -42,6 +44,7 @@ toggle.addEventListener('click', function () {
     cards.forEach(link => link.style.background = '#262630')
     navPopupElements.forEach(link => link.style.background = '#262630')
     techName.forEach(link => link.style.color = 'white');
+    referenceLink.style.color = 'rgb(187, 187, 187)';
 
 
   }
