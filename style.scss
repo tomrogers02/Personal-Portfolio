@@ -385,6 +385,20 @@ li {
 						font-weight: bold;
 					}
 
+					.project-status {
+						.status-button {
+							#status-name {
+								background-color: #099bbe;
+								padding: 0.2rem;
+								margin-block: 1rem;
+								border-radius: 0.5rem;
+								width: 10vw;
+								text-align: center;
+								font-size: 2vw;
+							}
+						}
+					}
+
 					.project-tech-links {
 						display: -webkit-box;
 						display: -ms-flexbox;
@@ -872,6 +886,19 @@ li {
 							font-weight: bold;
 						}
 
+						.project-status {
+							.status-button {
+								#status-name {
+									background-color: #099bbe;
+									padding: 0.2rem;
+									margin-block: 1rem;
+									border-radius: 0.5rem;
+									width: 6vw;
+									text-align: center;
+									font-size: 1vw;
+								}
+							}
+						}
 						.project-tech-links {
 							display: -webkit-box;
 							display: -ms-flexbox;
@@ -1392,6 +1419,20 @@ li {
 							font-weight: bold;
 						}
 
+						.project-status {
+							.status-button {
+								#status-name {
+									background-color: #099bbe;
+									padding: 0.2rem;
+									margin-block: 1rem;
+									border-radius: 0.5rem;
+									width: 5vw;
+									text-align: center;
+									font-size: 0.8vw;
+								}
+							}
+						}
+
 						.project-tech-links {
 							display: -webkit-box;
 							display: -ms-flexbox;
@@ -1484,7 +1525,9 @@ li {
 						}
 
 						.company-name {
-							font-size: 0.8vw;
+							font-size: 0.6vw;
+							padding: 0;
+							margin: 0;
 						}
 					}
 					.reference-link {

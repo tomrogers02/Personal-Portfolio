@@ -293,6 +293,15 @@ li {
     font-size: 5vw;
     font-weight: bold;
   }
+  body #projects .project-flex-box .right-project .project-status .status-button #status-name {
+    background-color: #099bbe;
+    padding: 0.2rem;
+    margin-block: 1rem;
+    border-radius: 0.5rem;
+    width: 10vw;
+    text-align: center;
+    font-size: 2vw;
+  }
   body #projects .project-flex-box .right-project .project-tech-links {
     display: flex;
     align-items: center;
@@ -634,6 +643,15 @@ li {
   body #projects .desktop-flex-box .project-flex-box .right-project .project-title {
     font-size: 1.8vw;
     font-weight: bold;
+  }
+  body #projects .desktop-flex-box .project-flex-box .right-project .project-status .status-button #status-name {
+    background-color: #099bbe;
+    padding: 0.2rem;
+    margin-block: 1rem;
+    border-radius: 0.5rem;
+    width: 6vw;
+    text-align: center;
+    font-size: 1vw;
   }
   body #projects .desktop-flex-box .project-flex-box .right-project .project-tech-links {
     display: flex;
@@ -980,6 +998,15 @@ li {
     font-size: 1.6vw;
     font-weight: bold;
   }
+  body #projects .desktop-flex-box .project-flex-box .right-project .project-status .status-button #status-name {
+    background-color: #099bbe;
+    padding: 0.2rem;
+    margin-block: 1rem;
+    border-radius: 0.5rem;
+    width: 5vw;
+    text-align: center;
+    font-size: 0.8vw;
+  }
   body #projects .desktop-flex-box .project-flex-box .right-project .project-tech-links {
     display: flex;
     align-items: center;
@@ -1044,7 +1071,9 @@ li {
     margin: 0;
   }
   body #testimonials .test-flex-box #test-right .flex-box-testimonial-name .company-name {
-    font-size: 0.8vw;
+    font-size: 0.6vw;
+    padding: 0;
+    margin: 0;
   }
   body #testimonials .test-flex-box #test-right .reference-link {
     color: rgb(187, 187, 187);
