@@ -1000,7 +1000,7 @@ li {
   }
   body #projects .desktop-flex-box .project-flex-box .right-project .project-status .status-button #status-name {
     background-color: #099bbe;
-    padding: 0.2rem;
+    padding: 0.3rem;
     margin-block: 1rem;
     border-radius: 0.5rem;
     width: 5vw;
